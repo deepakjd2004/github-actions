@@ -18,7 +18,7 @@ jobs:
     container:
       image: akamai/shell
     steps:
-         - name: Log the node version
+         - name: Save Akamai PM
            run: |
              echo -e "[papi]\nclient_secret = ${{ secrets.AKAMAI_DEFAULT_CLIENT_SECRET }}\nhost = ${{ secrets.AKAMAI_DEFAULT_HOST }}\naccess_token = ${{ secrets.AKAMAI_DEFAULT_ACCESS_TOKEN }}\nclient_token = ${{ secrets.AKAMAI_DEFAULT_CLIENT_TOKEN }}" > "$HOME/.edgerc"
-             akamai pm np -e config-rapid-dj.xml -p dj-config-rapid-dj.xml -g grp_178772 -a B-C-1ED34DK
+             akamai pm save -p dj26May2022-config-rapid-dj.xml -g grp_178772 -a B-C-1ED34DK
