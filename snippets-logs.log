@@ -1,0 +1,2908 @@
+[2022-05-26T19:00:07.121] [INFO] devops-prov.factory - Switching account key to: 'B-C-1ED34DK'
+[2022-05-26T19:00:07.123] [INFO] devops-prov.factory - Switching account key to: 'B-C-1ED34DK'
+[2022-05-26T19:00:07.123] [INFO] devops-prov.factory - Using credentials file: '/Users/djha/.edgerc', section: 'papi'
+[2022-05-26T19:00:07.124] [INFO] pm-cli - creating new property with info: {
+    "projectName": "dj-config-rapid-dj.xml",
+    "variableMode": "no-var",
+    "groupId": "178772",
+    "propertyName": "config-rapid-dj.xml",
+    "isInRetryMode": false
+}
+[2022-05-26T19:00:07.124] [INFO] devops-prov.factory - need to create papi
+[2022-05-26T19:00:07.125] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/search/find-by-value
+[2022-05-26T19:00:07.129] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:07+0000;nonce=6522d24e-0d20-430b-8431-273a33f79b4c;
+
+[2022-05-26T19:00:07.129] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyName":"config-rapid-dj.xml"}"
+[2022-05-26T19:00:07.129] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 38
+[2022-05-26T19:00:07.130] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyName":"config-rapid-dj.xml"}"
+[2022-05-26T19:00:07.130] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyName":"config-rapid-dj.xml"}
+[2022-05-26T19:00:07.130] [INFO] devops-prov.edgegrid.helpers - Content hash is "ULLqelnSsr9ZsvyZEtxeH7LO80OuBk1O40f4jAxhVos="
+[2022-05-26T19:00:07.130] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/search/find-by-value?accountSwitchKey=B-C-1ED34DK		ULLqelnSsr9ZsvyZEtxeH7LO80OuBk1O40f4jAxhVos=	EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:07+0000;nonce=6522d24e-0d20-430b-8431-273a33f79b4c;" 
+
+[2022-05-26T19:00:07.130] [INFO] devops-prov.edgegrid.helpers - Signing key: T5qkuSJQNOmoW89dQDHQp/oyoQ1NrHP0CWZjrRGeIgA=
+
+[2022-05-26T19:00:07.131] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:07+0000;nonce=6522d24e-0d20-430b-8431-273a33f79b4c;signature=bK1b8ULv1U5rRlYnmWgXddGTPAVG/bRRFqwUnhAkFiY=
+
+[2022-05-26T19:00:07.153] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/search/find-by-value?accountSwitchKey=B-C-1ED34DK',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:07+0000;nonce=6522d24e-0d20-430b-8431-273a33f79b4c;signature=bK1b8ULv1U5rRlYnmWgXddGTPAVG/bRRFqwUnhAkFiY=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net',
+    'content-length': 38
+  },
+  body: '{"propertyName":"config-rapid-dj.xml"}'
+}
+[2022-05-26T19:00:37.012] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'f3a8a0b7-75e9-4dd0-9451-a6191f441480, f3a8a0b7-75e9-4dd0-9451-a6191f441480',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept-encoding',
+    'x-trace-id': 'b871628f4194550f',
+    'content-length': '871',
+    date: 'Thu, 26 May 2022 09:00:37 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "accountId" : "act_B-C-1ED34DK",\n' +
+    '      "contractId" : "ctr_C-1ED34DY",\n' +
+    '      "assetId" : "aid_10841187",\n' +
+    '      "groupId" : "grp_178772",\n' +
+    '      "propertyId" : "prp_652996",\n' +
+    '      "propertyName" : "config-rapid-dj.xml",\n' +
+    '      "propertyVersion" : 195,\n' +
+    '      "updatedByUser" : "djha",\n' +
+    '      "updatedDate" : "2022-03-31T07:30:33Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-C-1ED34DK",\n' +
+    '      "contractId" : "ctr_C-1ED34DY",\n' +
+    '      "assetId" : "aid_10841187",\n' +
+    '      "groupId" : "grp_178772",\n' +
+    '      "propertyId" : "prp_652996",\n' +
+    '      "propertyName" : "config-rapid-dj.xml",\n' +
+    '      "propertyVersion" : 197,\n' +
+    '      "updatedByUser" : "djha",\n' +
+    '      "updatedDate" : "2022-05-09T03:04:21Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2022-05-26T19:00:37.012] [INFO] devops-prov.openclient - Status code:  200
+[2022-05-26T19:00:37.012] [INFO] devops-prov.openclient - Body:  {
+  "versions" : {
+    "items" : [ {
+      "accountId" : "act_B-C-1ED34DK",
+      "contractId" : "ctr_C-1ED34DY",
+      "assetId" : "aid_10841187",
+      "groupId" : "grp_178772",
+      "propertyId" : "prp_652996",
+      "propertyName" : "config-rapid-dj.xml",
+      "propertyVersion" : 195,
+      "updatedByUser" : "djha",
+      "updatedDate" : "2022-03-31T07:30:33Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE"
+    }, {
+      "accountId" : "act_B-C-1ED34DK",
+      "contractId" : "ctr_C-1ED34DY",
+      "assetId" : "aid_10841187",
+      "groupId" : "grp_178772",
+      "propertyId" : "prp_652996",
+      "propertyName" : "config-rapid-dj.xml",
+      "propertyVersion" : 197,
+      "updatedByUser" : "djha",
+      "updatedDate" : "2022-05-09T03:04:21Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE"
+    } ]
+  }
+}
+[2022-05-26T19:00:37.013] [INFO] pm-cli - Attempting to load rule tree for property id: 652996 and version: undefined
+[2022-05-26T19:00:37.013] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/652996/versions/latest
+[2022-05-26T19:00:37.013] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:37+0000;nonce=b93bca85-020d-4c68-b09c-c9e1135478ce;
+
+[2022-05-26T19:00:37.013] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:00:37.014] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:00:37.014] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/652996/versions/latest?accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:37+0000;nonce=b93bca85-020d-4c68-b09c-c9e1135478ce;" 
+
+[2022-05-26T19:00:37.014] [INFO] devops-prov.edgegrid.helpers - Signing key: Y6CksfFetS41ehm4lv7k4WSIwXXlQtb9kmO1MjMNa3c=
+
+[2022-05-26T19:00:37.014] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:37+0000;nonce=b93bca85-020d-4c68-b09c-c9e1135478ce;signature=WT8k9mPJByuRjkgW8N2uu72Sk1E2MT32BP1z6IhqBr8=
+
+[2022-05-26T19:00:37.015] [INFO] devops-prov.edgegrid - request {
+  debugId: 2,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/latest?accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:37+0000;nonce=b93bca85-020d-4c68-b09c-c9e1135478ce;signature=WT8k9mPJByuRjkgW8N2uu72Sk1E2MT32BP1z6IhqBr8=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:00:38.344] [INFO] devops-prov.edgegrid - response {
+  debugId: 2,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'f3a8a0b7-75e9-4dd0-9451-a6191f441480, f3a8a0b7-75e9-4dd0-9451-a6191f441480',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/prp_652996/versions/197?accountSwitchKey=B-C-1ED34DK',
+    vary: 'accept-encoding',
+    'x-trace-id': 'c918628f41b55612',
+    'content-length': '96',
+    date: 'Thu, 26 May 2022 09:00:38 GMT',
+    connection: 'close'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "versionLink" : "/papi/v1/properties/prp_652996/versions/197?accountSwitchKey=B-C-1ED34DK"\n' +
+    '}'
+}
+[2022-05-26T19:00:38.344] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:38+0000;nonce=c9a53a73-2d87-4523-a20f-2f6cd5376e33;
+
+[2022-05-26T19:00:38.345] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:00:38.345] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:00:38.345] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/prp_652996/versions/197?accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:38+0000;nonce=c9a53a73-2d87-4523-a20f-2f6cd5376e33;" 
+
+[2022-05-26T19:00:38.345] [INFO] devops-prov.edgegrid.helpers - Signing key: WEjbp97ngymqZCMKaw99GBxrR8CWxAmV7z1zhEkwCx4=
+
+[2022-05-26T19:00:38.345] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:38+0000;nonce=c9a53a73-2d87-4523-a20f-2f6cd5376e33;signature=MT8dhOWRDA6i/+ycJ8lxPvLAYV/IE4HuLaGiV4+sQ90=
+
+[2022-05-26T19:00:38.346] [INFO] devops-prov.edgegrid - request {
+  debugId: 3,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/prp_652996/versions/197?accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:38+0000;nonce=c9a53a73-2d87-4523-a20f-2f6cd5376e33;signature=MT8dhOWRDA6i/+ycJ8lxPvLAYV/IE4HuLaGiV4+sQ90=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:00:38.754] [INFO] devops-prov.edgegrid - response {
+  debugId: 3,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'f3a8a0b7-75e9-4dd0-9451-a6191f441480, f3a8a0b7-75e9-4dd0-9451-a6191f441480',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/197?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+    vary: 'accept-encoding',
+    'x-trace-id': 'babc628f41b55614',
+    'content-length': '129',
+    date: 'Thu, 26 May 2022 09:00:38 GMT',
+    connection: 'close'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/652996/versions/197?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK"\n' +
+    '}'
+}
+[2022-05-26T19:00:38.755] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:38+0000;nonce=ee27a470-0036-41d5-b106-cc1fab622858;
+
+[2022-05-26T19:00:38.755] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:00:38.755] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:00:38.755] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/652996/versions/197?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:38+0000;nonce=ee27a470-0036-41d5-b106-cc1fab622858;" 
+
+[2022-05-26T19:00:38.756] [INFO] devops-prov.edgegrid.helpers - Signing key: WEjbp97ngymqZCMKaw99GBxrR8CWxAmV7z1zhEkwCx4=
+
+[2022-05-26T19:00:38.756] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:38+0000;nonce=ee27a470-0036-41d5-b106-cc1fab622858;signature=BQFPkrCur8WbwW46nd7/MafSUfZS2UtfZDqczm9u/PI=
+
+[2022-05-26T19:00:38.757] [INFO] devops-prov.edgegrid - request {
+  debugId: 4,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/197?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:38+0000;nonce=ee27a470-0036-41d5-b106-cc1fab622858;signature=BQFPkrCur8WbwW46nd7/MafSUfZS2UtfZDqczm9u/PI=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:00:40.491] [INFO] devops-prov.edgegrid - response {
+  debugId: 4,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'f3a8a0b7-75e9-4dd0-9451-a6191f441480, f3a8a0b7-75e9-4dd0-9451-a6191f441480',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'x-trace-id': 'de14628f41b756b0',
+    'content-length': '554',
+    date: 'Thu, 26 May 2022 09:00:40 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_652996",\n' +
+    '  "propertyName" : "config-rapid-dj.xml",\n' +
+    '  "accountId" : "act_B-C-1ED34DK",\n' +
+    '  "contractId" : "ctr_C-1ED34DY",\n' +
+    '  "groupId" : "grp_178772",\n' +
+    '  "assetId" : "aid_10841187",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 197,\n' +
+    '      "updatedByUser" : "djha",\n' +
+    '      "updatedDate" : "2022-05-09T03:04:21Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE",\n' +
+    '      "etag" : "e3e6ede176112496f8c38cb206edb07fe722dddd",\n' +
+    '      "productId" : "prd_SPM",\n' +
+    '      "ruleFormat" : "latest"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2022-05-26T19:00:40.491] [INFO] devops-prov.openclient - Status code:  200
+[2022-05-26T19:00:40.491] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_652996",
+  "propertyName" : "config-rapid-dj.xml",
+  "accountId" : "act_B-C-1ED34DK",
+  "contractId" : "ctr_C-1ED34DY",
+  "groupId" : "grp_178772",
+  "assetId" : "aid_10841187",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 197,
+      "updatedByUser" : "djha",
+      "updatedDate" : "2022-05-09T03:04:21Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE",
+      "etag" : "e3e6ede176112496f8c38cb206edb07fe722dddd",
+      "productId" : "prd_SPM",
+      "ruleFormat" : "latest"
+    } ]
+  }
+}
+[2022-05-26T19:00:40.492] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/client-settings
+[2022-05-26T19:00:40.492] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:40+0000;nonce=19e5c78d-b194-4bc8-998a-c32d06e42af8;
+
+[2022-05-26T19:00:40.492] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:00:40.492] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:00:40.492] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/client-settings?accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:40+0000;nonce=19e5c78d-b194-4bc8-998a-c32d06e42af8;" 
+
+[2022-05-26T19:00:40.492] [INFO] devops-prov.edgegrid.helpers - Signing key: ULkr49kc9HSoycOk8tFDfXhSPQYWNRjrdEeL/DRItPQ=
+
+[2022-05-26T19:00:40.492] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:40+0000;nonce=19e5c78d-b194-4bc8-998a-c32d06e42af8;signature=ncsObgnZEyPooM1ZPGtVPUO08F4ew+cScnxWsfKgeDg=
+
+[2022-05-26T19:00:40.494] [INFO] devops-prov.edgegrid - request {
+  debugId: 5,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/client-settings?accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:40+0000;nonce=19e5c78d-b194-4bc8-998a-c32d06e42af8;signature=ncsObgnZEyPooM1ZPGtVPUO08F4ew+cScnxWsfKgeDg=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:00:41.000] [INFO] devops-prov.edgegrid - response {
+  debugId: 5,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'd16a7d0f-14fe-4792-b5e6-0368ac3425d0, d16a7d0f-14fe-4792-b5e6-0368ac3425d0',
+    'papi-cache-status': 'CACHE_MISS',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'babc628f41b6561e',
+    'content-length': '58',
+    date: 'Thu, 26 May 2022 09:00:41 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n  "ruleFormat" : "v2021-09-22",\n  "usePrefixes" : true\n}'
+}
+[2022-05-26T19:00:41.000] [INFO] devops-prov.openclient - Status code:  200
+[2022-05-26T19:00:41.000] [INFO] devops-prov.openclient - Body:  {
+  "ruleFormat" : "v2021-09-22",
+  "usePrefixes" : true
+}
+[2022-05-26T19:00:41.001] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/652996/versions/197/rules
+[2022-05-26T19:00:41.001] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:41+0000;nonce=0bb5f2e8-4959-4b47-a78a-65ac6216f116;
+
+[2022-05-26T19:00:41.001] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:00:41.001] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:00:41.001] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/652996/versions/197/rules?accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:41+0000;nonce=0bb5f2e8-4959-4b47-a78a-65ac6216f116;" 
+
+[2022-05-26T19:00:41.001] [INFO] devops-prov.edgegrid.helpers - Signing key: IJCv7YYsdBgqhTIRW1IFNe/klXMeGc/LVYMah6ppvOI=
+
+[2022-05-26T19:00:41.001] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:41+0000;nonce=0bb5f2e8-4959-4b47-a78a-65ac6216f116;signature=H9YlvpZwFPz0YYE5HmoY76FdeR7D0XwZFWN/5sDApEA=
+
+[2022-05-26T19:00:41.003] [INFO] devops-prov.edgegrid - request {
+  debugId: 6,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/197/rules?accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Accept: 'application/vnd.akamai.papirules.v2021-09-22+json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:41+0000;nonce=0bb5f2e8-4959-4b47-a78a-65ac6216f116;signature=H9YlvpZwFPz0YYE5HmoY76FdeR7D0XwZFWN/5sDApEA=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:00:41.359] [INFO] devops-prov.edgegrid - response {
+  debugId: 6,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'd16a7d0f-14fe-4792-b5e6-0368ac3425d0, d16a7d0f-14fe-4792-b5e6-0368ac3425d0',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/197/rules?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+    vary: 'accept-encoding',
+    'x-trace-id': 'de14628f41b856b8',
+    'content-length': '135',
+    date: 'Thu, 26 May 2022 09:00:41 GMT',
+    connection: 'close'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/652996/versions/197/rules?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK"\n' +
+    '}'
+}
+[2022-05-26T19:00:41.364] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:41+0000;nonce=20b31073-172a-4e60-9c01-ced0d6e6a3f4;
+
+[2022-05-26T19:00:41.364] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:00:41.364] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:00:41.364] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/652996/versions/197/rules?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:41+0000;nonce=20b31073-172a-4e60-9c01-ced0d6e6a3f4;" 
+
+[2022-05-26T19:00:41.364] [INFO] devops-prov.edgegrid.helpers - Signing key: IJCv7YYsdBgqhTIRW1IFNe/klXMeGc/LVYMah6ppvOI=
+
+[2022-05-26T19:00:41.364] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:41+0000;nonce=20b31073-172a-4e60-9c01-ced0d6e6a3f4;signature=3cjkSbwoaWM2ugU9g+h9Omh6pKGEAHzSdOs2ko7Ae6Q=
+
+[2022-05-26T19:00:41.365] [INFO] devops-prov.edgegrid - request {
+  debugId: 7,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/197/rules?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Accept: 'application/vnd.akamai.papirules.v2021-09-22+json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:41+0000;nonce=20b31073-172a-4e60-9c01-ced0d6e6a3f4;signature=3cjkSbwoaWM2ugU9g+h9Omh6pKGEAHzSdOs2ko7Ae6Q=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:00:51.038] [INFO] devops-prov.edgegrid - response {
+  debugId: 7,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/vnd.akamai.papirules.v2021-09-22+json;charset=UTF-8',
+    'x-ids-session-id': 'f3a8a0b7-75e9-4dd0-9451-a6191f441480, f3a8a0b7-75e9-4dd0-9451-a6191f441480',
+    'papi-cache-status': 'CACHE_MISS',
+    'x-limit-elements-per-property-limit': '3000',
+    'x-limit-elements-per-property-remaining': '2960',
+    'x-limit-max-nested-rules-limit': '6',
+    'x-limit-max-nested-rules-remaining': '5',
+    'x-limit-matched-includes-per-property-limit': '300',
+    'x-limit-matched-includes-per-property-remaining': '300',
+    'x-limit-max-includes-at-default-rule-limit': '3',
+    'x-limit-max-includes-at-default-rule-remaining': '3',
+    'content-language': 'en-US',
+    link: '<https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/v0/schemas/products/prd_SPM/v2021-09-22>; rel="describedby"',
+    vary: 'Accept, Accept-Encoding',
+    'cache-control': 'no-store',
+    'x-trace-id': 'babc628f41b9562f',
+    'content-length': '14304',
+    date: 'Thu, 26 May 2022 09:00:51 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_B-C-1ED34DK",\n' +
+    '  "contractId" : "ctr_C-1ED34DY",\n' +
+    '  "groupId" : "grp_178772",\n' +
+    '  "propertyId" : "prp_652996",\n' +
+    '  "propertyName" : "config-rapid-dj.xml",\n' +
+    '  "propertyVersion" : 197,\n' +
+    '  "etag" : "fd91eeec883747a4a9fef457d8f526d701686f5e",\n' +
+    '  "rules" : {\n' +
+    '    "name" : "default",\n' +
+    '    "children" : [ {\n' +
+    '      "name" : "Offload origin",\n' +
+    '      "children" : [ {\n' +
+    '        "name" : "CSS and JavaScript",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "7d"\n' +
+    '          }\n' +
+    '        }, {\n' +
+    '          "name" : "prefetch",\n' +
+    '          "options" : {\n' +
+    '            "enabled" : true\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "css", "js" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "any",\n' +
+    '        "comments" : "Override the default caching behavior for CSS and JavaScript"\n' +
+    '      }, {\n' +
+    '        "name" : "Fonts",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "30d"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "eot", "woff", "woff2", "otf", "ttf" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "any",\n' +
+    '        "comments" : "Override the default caching behavior for fonts."\n' +
+    '      }, {\n' +
+    '        "name" : "Images",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "30d"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "jpg", "jpeg", "png", "gif", "webp", "jp2", "ico", "svg", "svgz" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "any",\n' +
+    '        "comments" : "Override the default caching behavior for images."\n' +
+    '      }, {\n' +
+    '        "name" : "Files",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "7d"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "pdf", "doc", "docx", "odt" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "any",\n' +
+    '        "comments" : "Override the default caching behavior for files. Files containing Personal Identified Information (PII) should require Edge authentication or not be cached at all."\n' +
+    '      }, {\n' +
+    '        "name" : "Other static objects",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "7d"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "aif", "aiff", "au", "avi", "bin", "bmp", "cab", "carb", "cct", "cdf", "class", "dcr", "dtd", "exe", "flv", "gcf", "gff", "grv", "hdml", "hqx", "ini", "mov", "mp3", "nc", "pct", "ppc", "pws", "swa", "swf", "txt", "vbs", "w32", "wav", "midi", "wbmp", "wml", "wmlc", "wmls", "wmlsc", "xsd", "zip", "pict", "tif", "tiff", "mid", "jxr", "jar" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "any",\n' +
+    '        "comments" : "Override the default caching behavior for other static objects."\n' +
+    '      }, {\n' +
+    '        "name" : "HTML pages",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "11m"\n' +
+    '          }\n' +
+    '        }, {\n' +
+    '          "name" : "cacheKeyQueryParams",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "IGNORE",\n' +
+    '            "exactMatch" : true,\n' +
+    '            "parameters" : [ "gclid", "fbclid", "utm_source", "utm_campaign", "utm_medium", "utm_content" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "html", "htm", "php", "jsp", "aspx", "EMPTY_STRING" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Override the default caching behavior for HTML pages cached on edge servers."\n' +
+    '      }, {\n' +
+    '        "name" : "Redirects",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "cacheRedirect",\n' +
+    '          "options" : {\n' +
+    '            "enabled" : "true"\n' +
+    '          }\n' +
+    '        }, {\n' +
+    '          "name" : "chaseRedirects",\n' +
+    '          "options" : {\n' +
+    '            "enabled" : false\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Configure caching for HTTP redirects. The redirect is cached for the same TTL as a 200 HTTP response when this feature is enabled."\n' +
+    '      }, {\n' +
+    '        "name" : "POST responses",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ ],\n' +
+    '        "criteria" : [ ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Define when HTTP POST requests should be cached. You should enable it under a criteria match."\n' +
+    '      }, {\n' +
+    '        "name" : "GraphQL",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "graphqlCaching",\n' +
+    '          "options" : {\n' +
+    '            "enabled" : false\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "path",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "MATCHES_ONE_OF",\n' +
+    '            "normalize" : false,\n' +
+    '            "values" : [ "/graphql" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Define when your GraphQL queries should be cached."\n' +
+    '      }, {\n' +
+    '        "name" : "Uncacheable objects",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "downstreamCache",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "BUST"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "cacheability",\n' +
+    '          "options" : {\n' +
+    '            "matchOperator" : "IS_NOT",\n' +
+    '            "value" : "CACHEABLE"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Configure the default client caching behavior for uncacheable content at the edge."\n' +
+    '      } ],\n' +
+    '      "behaviors" : [ {\n' +
+    '        "name" : "caching",\n' +
+    '        "options" : {\n' +
+    '          "behavior" : "MAX_AGE",\n' +
+    '          "mustRevalidate" : false,\n' +
+    '          "ttl" : "110m"\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "tieredDistribution",\n' +
+    '        "options" : {\n' +
+    '          "enabled" : true,\n' +
+    '          "tieredDistributionMap" : "CH2"\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "validateEntityTag",\n' +
+    '        "options" : {\n' +
+    '          "enabled" : false\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "removeVary",\n' +
+    '        "options" : {\n' +
+    '          "enabled" : false\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "cacheError",\n' +
+    '        "options" : {\n' +
+    '          "enabled" : true,\n' +
+    '          "preserveStale" : true,\n' +
+    '          "ttl" : "10s"\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "cacheKeyQueryParams",\n' +
+    '        "options" : {\n' +
+    '          "behavior" : "INCLUDE_ALL_ALPHABETIZE_ORDER"\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "prefreshCache",\n' +
+    '        "options" : {\n' +
+    '          "enabled" : true,\n' +
+    '          "prefreshval" : 90\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "downstreamCache",\n' +
+    '        "options" : {\n' +
+    '          "allowBehavior" : "LESSER",\n' +
+    '          "behavior" : "ALLOW",\n' +
+    '          "sendHeaders" : "CACHE_CONTROL",\n' +
+    '          "sendPrivate" : false\n' +
+    '        }\n' +
+    '      } ],\n' +
+    '      "criteria" : [ ],\n' +
+    '      "criteriaMustSatisfy" : "all",\n' +
+    '      "comments" : "Control the settings related to caching content at the edge and in the browser. As a result, fewer requests go to your origin, fewer bytes leave your data centers, and your assets are closer to your users."\n' +
+    '    }, {\n' +
+    '      "name" : "Minimize payload",\n' +
+    '      "children" : [ {\n' +
+    '        "name" : "Compressible objects",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "gzipResponse",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "ALWAYS"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "contentType",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "matchWildcard" : true,\n' +
+    '            "values" : [ "application/*javascript*", "application/*json*", "application/*xml*", "application/text*", "application/vnd-ms-fontobject", "application/vnd.microsoft.icon", "application/x-font-opentype", "application/x-font-truetype", "application/x-font-ttf", "application/xmlfont/eot", "font/eot", "font/opentype", "font/otf", "image/svg+xml", "image/vnd.microsoft.icon", "image/x-icon", "text/*", "application/octet-stream*", "application/x-font-eot*", "font/ttf", "application/font-ttf", "application/font-sfnt", "application/x-tgif" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Serve gzip compressed content for text-based formats."\n' +
+    '      } ],\n' +
+    '      "behaviors" : [ ],\n' +
+    '      "criteria" : [ ],\n' +
+    '      "criteriaMustSatisfy" : "all",\n' +
+    '      "comments" : "Control the settings that reduce the size of the delivered content and decrease the number of bytes sent by your properties. This allows you to cut down the network overhead of your website or API."\n' +
+    '    }, {\n' +
+    '      "name" : "Test",\n' +
+    '      "children" : [ ],\n' +
+    '      "behaviors" : [ {\n' +
+    '        "name" : "modifyOutgoingResponseHeader",\n' +
+    '        "options" : {\n' +
+    '          "action" : "MODIFY",\n' +
+    '          "avoidDuplicateHeaders" : false,\n' +
+    '          "customHeaderName" : "apikey_1",\n' +
+    '          "newHeaderValue" : "xyz123",\n' +
+    '          "standardModifyHeaderName" : "OTHER"\n' +
+    '        }\n' +
+    '      } ],\n' +
+    '      "criteria" : [ ],\n' +
+    '      "criteriaMustSatisfy" : "all"\n' +
+    '    } ],\n' +
+    '    "behaviors" : [ {\n' +
+    '      "name" : "origin",\n' +
+    '      "options" : {\n' +
+    '        "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '        "compress" : true,\n' +
+    '        "enableTrueClientIp" : false,\n' +
+    '        "forwardHostHeader" : "ORIGIN_HOSTNAME",\n' +
+    '        "hostname" : "romche.com",\n' +
+    '        "httpPort" : 80,\n' +
+    '        "httpsPort" : 443,\n' +
+    '        "originCertificate" : "",\n' +
+    '        "originSni" : true,\n' +
+    '        "originType" : "CUSTOMER",\n' +
+    '        "ports" : "",\n' +
+    '        "verificationMode" : "PLATFORM_SETTINGS"\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "cpCode",\n' +
+    '      "options" : {\n' +
+    '        "value" : {\n' +
+    '          "cpCodeLimits" : null,\n' +
+    '          "createdDate" : 1.601539639E12,\n' +
+    '          "description" : "config-rapid-dj.xml",\n' +
+    '          "id" : 1096058,\n' +
+    '          "name" : "config-rapid-dj.xml",\n' +
+    '          "products" : [ "SPM" ]\n' +
+    '        }\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "allowPost",\n' +
+    '      "options" : {\n' +
+    '        "allowWithoutContentLength" : true,\n' +
+    '        "enabled" : true\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "realUserMonitoring",\n' +
+    '      "options" : {\n' +
+    '        "enabled" : true\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "setVariable",\n' +
+    '      "options" : {\n' +
+    '        "extractLocation" : "CLIENT_REQUEST_HEADER",\n' +
+    '        "headerName" : "api-key",\n' +
+    '        "transform" : "NONE",\n' +
+    '        "valueSource" : "EXTRACT",\n' +
+    '        "variableName" : "PMUSER_API_KEY_VALUE"\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "rapid",\n' +
+    '      "options" : {\n' +
+    '        "enabled" : false\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "globalRequestNumber",\n' +
+    '      "options" : {\n' +
+    '        "headerName" : "Akamai-GRN",\n' +
+    '        "outputOption" : "REQUEST_HEADER"\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "edgeRedirector",\n' +
+    '      "options" : {\n' +
+    '        "enabled" : false\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "cachePost",\n' +
+    '      "options" : {\n' +
+    '        "enabled" : true,\n' +
+    '        "useBody" : "MD5"\n' +
+    '      }\n' +
+    '    } ],\n' +
+    '    "options" : {\n' +
+    '      "is_secure" : false\n' +
+    '    },\n' +
+    '    "variables" : [ {\n' +
+    '      "name" : "PMUSER_API_KEY_VALUE",\n' +
+    '      "value" : null,\n' +
+    '      "description" : null,\n' +
+    '      "hidden" : false,\n' +
+    '      "sensitive" : false\n' +
+    '    }, {\n' +
+    '      "name" : "PMUSER_KEY_HEADER",\n' +
+    '      "value" : "key_header",\n' +
+    '      "description" : null,\n' +
+    '      "hidden" : false,\n' +
+    '      "sensitive" : false\n' +
+    '    }, {\n' +
+    '      "name" : "PMUSER_UUID_FINAL",\n' +
+    '      "value" : null,\n' +
+    '      "description" : "Variable to hold UUID value",\n' +
+    '      "hidden" : false,\n' +
+    '      "sensitive" : false\n' +
+    '    }, {\n' +
+    '      "name" : "PMUSER_API_TEST",\n' +
+    '      "value" : null,\n' +
+    '      "description" : null,\n' +
+    '      "hidden" : false,\n' +
+    '      "sensitive" : false\n' +
+    '    }, {\n' +
+    '      "name" : "PMUSER_REQ_TEST",\n' +
+    '      "value" : null,\n' +
+    '      "description" : null,\n' +
+    '      "hidden" : false,\n' +
+    '      "sensitive" : false\n' +
+    '    } ],\n' +
+    '    "comments" : "The Default Rule template contains all the necessary and recommended behaviors. Rules are evaluated from top to bottom and the last matching rule wins."\n' +
+    '  },\n' +
+    '  "warnings" : [ {\n' +
+    '    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/generic_behavior_issue.all_methods_on_ps",\n' +
+    '    "errorLocation" : "#/rules/behaviors/2",\n' +
+    '    "detail" : "The \\"Allow All Methods on Parent Servers\\" behavior must also be added for proper functionality"\n' +
+    '  }, {\n' +
+    '    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/generic_behavior_issue.rum_eol",\n' +
+    '    "errorLocation" : "#/rules/behaviors/3",\n' +
+    `    "detail" : "<strong> Important </strong>: We recommend using an mPulse behavior instead on this property. mPulse is Akamai's recommended source of RUM data going forward"\n` +
+    '  }, {\n' +
+    '    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/need_feature",\n' +
+    '    "errorLocation" : "#/rules/behaviors/8",\n' +
+    '    "detail" : "When using the post body in the cache key option in `Cache POST Responses`, it is recommended to further control caching using Cache ID Modification. Caution is advised as since there might be significant cache pollution as a result."\n' +
+    '  } ],\n' +
+    '  "ruleFormat" : "v2021-09-22"\n' +
+    '}'
+}
+[2022-05-26T19:00:51.041] [INFO] devops-prov.openclient - Status code:  200
+[2022-05-26T19:00:51.041] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_B-C-1ED34DK",
+  "contractId" : "ctr_C-1ED34DY",
+  "groupId" : "grp_178772",
+  "propertyId" : "prp_652996",
+  "propertyName" : "config-rapid-dj.xml",
+  "propertyVersion" : 197,
+  "etag" : "fd91eeec883747a4a9fef457d8f526d701686f5e",
+  "rules" : {
+    "name" : "default",
+    "children" : [ {
+      "name" : "Offload origin",
+      "children" : [ {
+        "name" : "CSS and JavaScript",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "7d"
+          }
+        }, {
+          "name" : "prefetch",
+          "options" : {
+            "enabled" : true
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "css", "js" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "any",
+        "comments" : "Override the default caching behavior for CSS and JavaScript"
+      }, {
+        "name" : "Fonts",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "30d"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "eot", "woff", "woff2", "otf", "ttf" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "any",
+        "comments" : "Override the default caching behavior for fonts."
+      }, {
+        "name" : "Images",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "30d"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "jpg", "jpeg", "png", "gif", "webp", "jp2", "ico", "svg", "svgz" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "any",
+        "comments" : "Override the default caching behavior for images."
+      }, {
+        "name" : "Files",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "7d"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "pdf", "doc", "docx", "odt" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "any",
+        "comments" : "Override the default caching behavior for files. Files containing Personal Identified Information (PII) should require Edge authentication or not be cached at all."
+      }, {
+        "name" : "Other static objects",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "7d"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "aif", "aiff", "au", "avi", "bin", "bmp", "cab", "carb", "cct", "cdf", "class", "dcr", "dtd", "exe", "flv", "gcf", "gff", "grv", "hdml", "hqx", "ini", "mov", "mp3", "nc", "pct", "ppc", "pws", "swa", "swf", "txt", "vbs", "w32", "wav", "midi", "wbmp", "wml", "wmlc", "wmls", "wmlsc", "xsd", "zip", "pict", "tif", "tiff", "mid", "jxr", "jar" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "any",
+        "comments" : "Override the default caching behavior for other static objects."
+      }, {
+        "name" : "HTML pages",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "11m"
+          }
+        }, {
+          "name" : "cacheKeyQueryParams",
+          "options" : {
+            "behavior" : "IGNORE",
+            "exactMatch" : true,
+            "parameters" : [ "gclid", "fbclid", "utm_source", "utm_campaign", "utm_medium", "utm_content" ]
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "html", "htm", "php", "jsp", "aspx", "EMPTY_STRING" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Override the default caching behavior for HTML pages cached on edge servers."
+      }, {
+        "name" : "Redirects",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "cacheRedirect",
+          "options" : {
+            "enabled" : "true"
+          }
+        }, {
+          "name" : "chaseRedirects",
+          "options" : {
+            "enabled" : false
+          }
+        } ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Configure caching for HTTP redirects. The redirect is cached for the same TTL as a 200 HTTP response when this feature is enabled."
+      }, {
+        "name" : "POST responses",
+        "children" : [ ],
+        "behaviors" : [ ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Define when HTTP POST requests should be cached. You should enable it under a criteria match."
+      }, {
+        "name" : "GraphQL",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "graphqlCaching",
+          "options" : {
+            "enabled" : false
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "path",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "MATCHES_ONE_OF",
+            "normalize" : false,
+            "values" : [ "/graphql" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Define when your GraphQL queries should be cached."
+      }, {
+        "name" : "Uncacheable objects",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "downstreamCache",
+          "options" : {
+            "behavior" : "BUST"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "cacheability",
+          "options" : {
+            "matchOperator" : "IS_NOT",
+            "value" : "CACHEABLE"
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Configure the default client caching behavior for uncacheable content at the edge."
+      } ],
+      "behaviors" : [ {
+        "name" : "caching",
+        "options" : {
+          "behavior" : "MAX_AGE",
+          "mustRevalidate" : false,
+          "ttl" : "110m"
+        }
+      }, {
+        "name" : "tieredDistribution",
+        "options" : {
+          "enabled" : true,
+          "tieredDistributionMap" : "CH2"
+        }
+      }, {
+        "name" : "validateEntityTag",
+        "options" : {
+          "enabled" : false
+        }
+      }, {
+        "name" : "removeVary",
+        "options" : {
+          "enabled" : false
+        }
+      }, {
+        "name" : "cacheError",
+        "options" : {
+          "enabled" : true,
+          "preserveStale" : true,
+          "ttl" : "10s"
+        }
+      }, {
+        "name" : "cacheKeyQueryParams",
+        "options" : {
+          "behavior" : "INCLUDE_ALL_ALPHABETIZE_ORDER"
+        }
+      }, {
+        "name" : "prefreshCache",
+        "options" : {
+          "enabled" : true,
+          "prefreshval" : 90
+        }
+      }, {
+        "name" : "downstreamCache",
+        "options" : {
+          "allowBehavior" : "LESSER",
+          "behavior" : "ALLOW",
+          "sendHeaders" : "CACHE_CONTROL",
+          "sendPrivate" : false
+        }
+      } ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : "Control the settings related to caching content at the edge and in the browser. As a result, fewer requests go to your origin, fewer bytes leave your data centers, and your assets are closer to your users."
+    }, {
+      "name" : "Minimize payload",
+      "children" : [ {
+        "name" : "Compressible objects",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "gzipResponse",
+          "options" : {
+            "behavior" : "ALWAYS"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "contentType",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "matchWildcard" : true,
+            "values" : [ "application/*javascript*", "application/*json*", "application/*xml*", "application/text*", "application/vnd-ms-fontobject", "application/vnd.microsoft.icon", "application/x-font-opentype", "application/x-font-truetype", "application/x-font-ttf", "application/xmlfont/eot", "font/eot", "font/opentype", "font/otf", "image/svg+xml", "image/vnd.microsoft.icon", "image/x-icon", "text/*", "application/octet-stream*", "application/x-font-eot*", "font/ttf", "application/font-ttf", "application/font-sfnt", "application/x-tgif" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Serve gzip compressed content for text-based formats."
+      } ],
+      "behaviors" : [ ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : "Control the settings that reduce the size of the delivered content and decrease the number of bytes sent by your properties. This allows you to cut down the network overhead of your website or API."
+    }, {
+      "name" : "Test",
+      "children" : [ ],
+      "behaviors" : [ {
+        "name" : "modifyOutgoingResponseHeader",
+        "options" : {
+          "action" : "MODIFY",
+          "avoidDuplicateHeaders" : false,
+          "customHeaderName" : "apikey_1",
+          "newHeaderValue" : "xyz123",
+          "standardModifyHeaderName" : "OTHER"
+        }
+      } ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all"
+    } ],
+    "behaviors" : [ {
+      "name" : "origin",
+      "options" : {
+        "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+        "compress" : true,
+        "enableTrueClientIp" : false,
+        "forwardHostHeader" : "ORIGIN_HOSTNAME",
+        "hostname" : "romche.com",
+        "httpPort" : 80,
+        "httpsPort" : 443,
+        "originCertificate" : "",
+        "originSni" : true,
+        "originType" : "CUSTOMER",
+        "ports" : "",
+        "verificationMode" : "PLATFORM_SETTINGS"
+      }
+    }, {
+      "name" : "cpCode",
+      "options" : {
+        "value" : {
+          "cpCodeLimits" : null,
+          "createdDate" : 1.601539639E12,
+          "description" : "config-rapid-dj.xml",
+          "id" : 1096058,
+          "name" : "config-rapid-dj.xml",
+          "products" : [ "SPM" ]
+        }
+      }
+    }, {
+      "name" : "allowPost",
+      "options" : {
+        "allowWithoutContentLength" : true,
+        "enabled" : true
+      }
+    }, {
+      "name" : "realUserMonitoring",
+      "options" : {
+        "enabled" : true
+      }
+    }, {
+      "name" : "setVariable",
+      "options" : {
+        "extractLocation" : "CLIENT_REQUEST_HEADER",
+        "headerName" : "api-key",
+        "transform" : "NONE",
+        "valueSource" : "EXTRACT",
+        "variableName" : "PMUSER_API_KEY_VALUE"
+      }
+    }, {
+      "name" : "rapid",
+      "options" : {
+        "enabled" : false
+      }
+    }, {
+      "name" : "globalRequestNumber",
+      "options" : {
+        "headerName" : "Akamai-GRN",
+        "outputOption" : "REQUEST_HEADER"
+      }
+    }, {
+      "name" : "edgeRedirector",
+      "options" : {
+        "enabled" : false
+      }
+    }, {
+      "name" : "cachePost",
+      "options" : {
+        "enabled" : true,
+        "useBody" : "MD5"
+      }
+    } ],
+    "options" : {
+      "is_secure" : false
+    },
+    "variables" : [ {
+      "name" : "PMUSER_API_KEY_VALUE",
+      "value" : null,
+      "description" : null,
+      "hidden" : false,
+      "sensitive" : false
+    }, {
+      "name" : "PMUSER_KEY_HEADER",
+      "value" : "key_header",
+      "description" : null,
+      "hidden" : false,
+      "sensitive" : false
+    }, {
+      "name" : "PMUSER_UUID_FINAL",
+      "value" : null,
+      "description" : "Variable to hold UUID value",
+      "hidden" : false,
+      "sensitive" : false
+    }, {
+      "name" : "PMUSER_API_TEST",
+      "value" : null,
+      "description" : null,
+      "hidden" : false,
+      "sensitive" : false
+    }, {
+      "name" : "PMUSER_REQ_TEST",
+      "value" : null,
+      "description" : null,
+      "hidden" : false,
+      "sensitive" : false
+    } ],
+    "comments" : "The Default Rule template contains all the necessary and recommended behaviors. Rules are evaluated from top to bottom and the last matching rule wins."
+  },
+  "warnings" : [ {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/generic_behavior_issue.all_methods_on_ps",
+    "errorLocation" : "#/rules/behaviors/2",
+    "detail" : "The \"Allow All Methods on Parent Servers\" behavior must also be added for proper functionality"
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/generic_behavior_issue.rum_eol",
+    "errorLocation" : "#/rules/behaviors/3",
+    "detail" : "<strong> Important </strong>: We recommend using an mPulse behavior instead on this property. mPulse is Akamai's recommended source of RUM data going forward"
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/need_feature",
+    "errorLocation" : "#/rules/behaviors/8",
+    "detail" : "When using the post body in the cache key option in `Cache POST Responses`, it is recommended to further control caching using Cache ID Modification. Caution is advised as since there might be significant cache pollution as a result."
+  } ],
+  "ruleFormat" : "v2021-09-22"
+}
+[2022-05-26T19:00:51.041] [INFO] pm-cli - Creating new PM CLI property with data:  {
+    "projectName": "dj-config-rapid-dj.xml",
+    "productId": "prd_SPM",
+    "variableMode": "no-var",
+    "contractId": "ctr_C-1ED34DY",
+    "propertyId": 652996,
+    "groupId": "178772",
+    "propertyName": "config-rapid-dj.xml",
+    "propertyVersion": 197,
+    "isInRetryMode": false,
+    "secureOption": false
+}
+[2022-05-26T19:00:51.042] [INFO] pm-cli.project - creating property /Users/djha/Desktop/Google Drive/devOps/github-actions/dj-config-rapid-dj.xml
+[2022-05-26T19:00:51.044] [INFO] devops-prov.project - Overriding edgegrid config with project default:  { section: 'papi' }
+[2022-05-26T19:00:51.045] [INFO] pm-cli.envionment - creating property 'dj-config-rapid-dj.xml
+[2022-05-26T19:00:51.045] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/properties?groupId=178772&contractId=ctr_C-1ED34DY
+[2022-05-26T19:00:51.045] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:51+0000;nonce=4340f3e2-2e22-4c46-96fb-4d4ba2426009;
+
+[2022-05-26T19:00:51.045] [INFO] devops-prov.edgegrid.helpers - Body is "{"productId":"prd_SPM","propertyName":"dj-config-rapid-dj.xml","cloneFrom":{"propertyId":652996,"version":197,"copyHostnames":false}}"
+[2022-05-26T19:00:51.045] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 133
+[2022-05-26T19:00:51.045] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"productId":"prd_SPM","propertyName":"dj-config-rapid-dj.xml","cloneFrom":{"propertyId":652996,"version":197,"copyHostnames":false}}"
+[2022-05-26T19:00:51.045] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"productId":"prd_SPM","propertyName":"dj-config-rapid-dj.xml","cloneFrom":{"propertyId":652996,"version":197,"copyHostnames":false}}
+[2022-05-26T19:00:51.046] [INFO] devops-prov.edgegrid.helpers - Content hash is "NcVf45ozLAkJD/wgPn/hjGQxFbPKHg7zMhxIO6EgKCI="
+[2022-05-26T19:00:51.046] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties?groupId=178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK		NcVf45ozLAkJD/wgPn/hjGQxFbPKHg7zMhxIO6EgKCI=	EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:51+0000;nonce=4340f3e2-2e22-4c46-96fb-4d4ba2426009;" 
+
+[2022-05-26T19:00:51.046] [INFO] devops-prov.edgegrid.helpers - Signing key: QznBsOx7WR/DMVfY/CVEwNJSUxpHrUHmVZ7CukTRVoE=
+
+[2022-05-26T19:00:51.046] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:51+0000;nonce=4340f3e2-2e22-4c46-96fb-4d4ba2426009;signature=vT+AlvA2QcimBFWgChbi8V/0PlO6Sz9cAw7H0BQdbos=
+
+[2022-05-26T19:00:51.047] [INFO] devops-prov.edgegrid - request {
+  debugId: 8,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties?groupId=178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:00:51+0000;nonce=4340f3e2-2e22-4c46-96fb-4d4ba2426009;signature=vT+AlvA2QcimBFWgChbi8V/0PlO6Sz9cAw7H0BQdbos=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net',
+    'content-length': 133
+  },
+  body: '{"productId":"prd_SPM","propertyName":"dj-config-rapid-dj.xml","cloneFrom":{"propertyId":652996,"version":197,"copyHostnames":false}}'
+}
+[2022-05-26T19:00:51.875] [INFO] devops-prov.edgegrid - response {
+  debugId: 8,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/problem+json;charset=UTF-8',
+    'x-ids-session-id': 'd16a7d0f-14fe-4792-b5e6-0368ac3425d0, d16a7d0f-14fe-4792-b5e6-0368ac3425d0',
+    'papi-cache-status': 'CACHE_MISS',
+    'content-language': 'en',
+    vary: 'Accept,Accept-Language, Accept-Encoding',
+    'x-trace-id': 'de14628f41c056f9',
+    'content-length': '407',
+    date: 'Thu, 26 May 2022 09:00:52 GMT',
+    connection: 'close'
+  },
+  statusCode: 400,
+  body: '{\n' +
+    '  "type" : "https://problems.luna.akamaiapis.net/papi/v0/property/name-in-use",\n' +
+    '  "title" : "Property name already in use",\n' +
+    '  "detail" : "The name `dj-config-rapid-dj.xml` is already being used.",\n' +
+    '  "instance" : "https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties?groupId=178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK#de14628f41c056f9",\n' +
+    '  "status" : 400\n' +
+    '}'
+}
+[2022-05-26T19:00:51.875] [ERROR] devops-prov.openclient - request failure, status code: '400', response body:  {
+  "type" : "https://problems.luna.akamaiapis.net/papi/v0/property/name-in-use",
+  "title" : "Property name already in use",
+  "detail" : "The name `dj-config-rapid-dj.xml` is already being used.",
+  "instance" : "https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties?groupId=178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK#de14628f41c056f9",
+  "status" : 400
+}
+[2022-05-26T19:01:10.295] [INFO] devops-prov.factory - Switching account key to: 'B-C-1ED34DK'
+[2022-05-26T19:01:10.299] [INFO] devops-prov.factory - Switching account key to: 'B-C-1ED34DK'
+[2022-05-26T19:01:10.299] [INFO] devops-prov.factory - Using credentials file: '/Users/djha/.edgerc', section: 'papi'
+[2022-05-26T19:01:10.300] [INFO] pm-cli - creating new property with info: {
+    "projectName": "dj26May2022-config-rapid-dj.xml",
+    "variableMode": "no-var",
+    "groupId": "178772",
+    "propertyName": "config-rapid-dj.xml",
+    "isInRetryMode": false
+}
+[2022-05-26T19:01:10.300] [INFO] devops-prov.factory - need to create papi
+[2022-05-26T19:01:10.301] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/search/find-by-value
+[2022-05-26T19:01:10.305] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:10+0000;nonce=666e19e0-22ea-4d64-9ae7-3fb9ecf04646;
+
+[2022-05-26T19:01:10.305] [INFO] devops-prov.edgegrid.helpers - Body is "{"propertyName":"config-rapid-dj.xml"}"
+[2022-05-26T19:01:10.305] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 38
+[2022-05-26T19:01:10.305] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"propertyName":"config-rapid-dj.xml"}"
+[2022-05-26T19:01:10.305] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"propertyName":"config-rapid-dj.xml"}
+[2022-05-26T19:01:10.306] [INFO] devops-prov.edgegrid.helpers - Content hash is "ULLqelnSsr9ZsvyZEtxeH7LO80OuBk1O40f4jAxhVos="
+[2022-05-26T19:01:10.306] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/search/find-by-value?accountSwitchKey=B-C-1ED34DK		ULLqelnSsr9ZsvyZEtxeH7LO80OuBk1O40f4jAxhVos=	EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:10+0000;nonce=666e19e0-22ea-4d64-9ae7-3fb9ecf04646;" 
+
+[2022-05-26T19:01:10.306] [INFO] devops-prov.edgegrid.helpers - Signing key: kLY+PamBMloD3BgdnN9j/K84uUWnpjm21c32vaqdsC4=
+
+[2022-05-26T19:01:10.306] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:10+0000;nonce=666e19e0-22ea-4d64-9ae7-3fb9ecf04646;signature=gaWHO0LzRi2GTeSCPxxtcQueIX415DIEhFlPW9Hp8cw=
+
+[2022-05-26T19:01:10.331] [INFO] devops-prov.edgegrid - request {
+  debugId: 1,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/search/find-by-value?accountSwitchKey=B-C-1ED34DK',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:10+0000;nonce=666e19e0-22ea-4d64-9ae7-3fb9ecf04646;signature=gaWHO0LzRi2GTeSCPxxtcQueIX415DIEhFlPW9Hp8cw=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net',
+    'content-length': 38
+  },
+  body: '{"propertyName":"config-rapid-dj.xml"}'
+}
+[2022-05-26T19:01:16.688] [INFO] devops-prov.edgegrid - response {
+  debugId: 1,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '8c0dcb6d-5628-443e-9a17-91d46045ece8, 8c0dcb6d-5628-443e-9a17-91d46045ece8',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept-encoding',
+    'x-trace-id': 'c91d628f41d356d1',
+    'content-length': '871',
+    date: 'Thu, 26 May 2022 09:01:16 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "accountId" : "act_B-C-1ED34DK",\n' +
+    '      "contractId" : "ctr_C-1ED34DY",\n' +
+    '      "assetId" : "aid_10841187",\n' +
+    '      "groupId" : "grp_178772",\n' +
+    '      "propertyId" : "prp_652996",\n' +
+    '      "propertyName" : "config-rapid-dj.xml",\n' +
+    '      "propertyVersion" : 195,\n' +
+    '      "updatedByUser" : "djha",\n' +
+    '      "updatedDate" : "2022-03-31T07:30:33Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "ACTIVE"\n' +
+    '    }, {\n' +
+    '      "accountId" : "act_B-C-1ED34DK",\n' +
+    '      "contractId" : "ctr_C-1ED34DY",\n' +
+    '      "assetId" : "aid_10841187",\n' +
+    '      "groupId" : "grp_178772",\n' +
+    '      "propertyId" : "prp_652996",\n' +
+    '      "propertyName" : "config-rapid-dj.xml",\n' +
+    '      "propertyVersion" : 197,\n' +
+    '      "updatedByUser" : "djha",\n' +
+    '      "updatedDate" : "2022-05-09T03:04:21Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2022-05-26T19:01:16.689] [INFO] devops-prov.openclient - Status code:  200
+[2022-05-26T19:01:16.689] [INFO] devops-prov.openclient - Body:  {
+  "versions" : {
+    "items" : [ {
+      "accountId" : "act_B-C-1ED34DK",
+      "contractId" : "ctr_C-1ED34DY",
+      "assetId" : "aid_10841187",
+      "groupId" : "grp_178772",
+      "propertyId" : "prp_652996",
+      "propertyName" : "config-rapid-dj.xml",
+      "propertyVersion" : 195,
+      "updatedByUser" : "djha",
+      "updatedDate" : "2022-03-31T07:30:33Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "ACTIVE"
+    }, {
+      "accountId" : "act_B-C-1ED34DK",
+      "contractId" : "ctr_C-1ED34DY",
+      "assetId" : "aid_10841187",
+      "groupId" : "grp_178772",
+      "propertyId" : "prp_652996",
+      "propertyName" : "config-rapid-dj.xml",
+      "propertyVersion" : 197,
+      "updatedByUser" : "djha",
+      "updatedDate" : "2022-05-09T03:04:21Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE"
+    } ]
+  }
+}
+[2022-05-26T19:01:16.689] [INFO] pm-cli - Attempting to load rule tree for property id: 652996 and version: undefined
+[2022-05-26T19:01:16.689] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/652996/versions/latest
+[2022-05-26T19:01:16.690] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:16+0000;nonce=a8cba6fc-47e6-4fd3-818b-eff6ae9d32cf;
+
+[2022-05-26T19:01:16.690] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:01:16.690] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:01:16.690] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/652996/versions/latest?accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:16+0000;nonce=a8cba6fc-47e6-4fd3-818b-eff6ae9d32cf;" 
+
+[2022-05-26T19:01:16.690] [INFO] devops-prov.edgegrid.helpers - Signing key: OgCR3xr6E+I+4X/Uj0WFtJ2WBUuOdGz+sBMo7TJfEuo=
+
+[2022-05-26T19:01:16.690] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:16+0000;nonce=a8cba6fc-47e6-4fd3-818b-eff6ae9d32cf;signature=i9/UIMNmXvGFkF5dOLpptETcS8P/MF/mdu7GJnxXbnQ=
+
+[2022-05-26T19:01:16.692] [INFO] devops-prov.edgegrid - request {
+  debugId: 2,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/latest?accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:16+0000;nonce=a8cba6fc-47e6-4fd3-818b-eff6ae9d32cf;signature=i9/UIMNmXvGFkF5dOLpptETcS8P/MF/mdu7GJnxXbnQ=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:01:20.322] [INFO] devops-prov.edgegrid - response {
+  debugId: 2,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'd16a7d0f-14fe-4792-b5e6-0368ac3425d0, d16a7d0f-14fe-4792-b5e6-0368ac3425d0',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/prp_652996/versions/197?accountSwitchKey=B-C-1ED34DK',
+    vary: 'accept-encoding',
+    'x-trace-id': 'cf2b628f41db56ae',
+    'content-length': '96',
+    date: 'Thu, 26 May 2022 09:01:20 GMT',
+    connection: 'close'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "versionLink" : "/papi/v1/properties/prp_652996/versions/197?accountSwitchKey=B-C-1ED34DK"\n' +
+    '}'
+}
+[2022-05-26T19:01:20.323] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:20+0000;nonce=87304812-cac1-4230-81df-a009a0e00331;
+
+[2022-05-26T19:01:20.324] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:01:20.324] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:01:20.324] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/prp_652996/versions/197?accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:20+0000;nonce=87304812-cac1-4230-81df-a009a0e00331;" 
+
+[2022-05-26T19:01:20.324] [INFO] devops-prov.edgegrid.helpers - Signing key: 8l0ZGO8BHiI6h5F+Z7GRTd47KfvqYg1HOUr6Qj2MsAM=
+
+[2022-05-26T19:01:20.324] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:20+0000;nonce=87304812-cac1-4230-81df-a009a0e00331;signature=10rWaPo/onzaAT267gFpKw7gDp126Gcjn58CJeLvznk=
+
+[2022-05-26T19:01:20.326] [INFO] devops-prov.edgegrid - request {
+  debugId: 3,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/prp_652996/versions/197?accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:20+0000;nonce=87304812-cac1-4230-81df-a009a0e00331;signature=10rWaPo/onzaAT267gFpKw7gDp126Gcjn58CJeLvznk=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:01:20.937] [INFO] devops-prov.edgegrid - response {
+  debugId: 3,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'd16a7d0f-14fe-4792-b5e6-0368ac3425d0, d16a7d0f-14fe-4792-b5e6-0368ac3425d0',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/197?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+    vary: 'accept-encoding',
+    'x-trace-id': 'c91d628f41e05721',
+    'content-length': '129',
+    date: 'Thu, 26 May 2022 09:01:20 GMT',
+    connection: 'close'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/652996/versions/197?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK"\n' +
+    '}'
+}
+[2022-05-26T19:01:20.938] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:20+0000;nonce=cce6e1f6-7e69-4e08-8ddf-ee2e7ddf61a6;
+
+[2022-05-26T19:01:20.938] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:01:20.938] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:01:20.938] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/652996/versions/197?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:20+0000;nonce=cce6e1f6-7e69-4e08-8ddf-ee2e7ddf61a6;" 
+
+[2022-05-26T19:01:20.939] [INFO] devops-prov.edgegrid.helpers - Signing key: 8l0ZGO8BHiI6h5F+Z7GRTd47KfvqYg1HOUr6Qj2MsAM=
+
+[2022-05-26T19:01:20.939] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:20+0000;nonce=cce6e1f6-7e69-4e08-8ddf-ee2e7ddf61a6;signature=TESVLT6qOS6y2PukFa0uC1xmrYp3ejxuFHr3G6z7uiQ=
+
+[2022-05-26T19:01:20.940] [INFO] devops-prov.edgegrid - request {
+  debugId: 4,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/197?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:20+0000;nonce=cce6e1f6-7e69-4e08-8ddf-ee2e7ddf61a6;signature=TESVLT6qOS6y2PukFa0uC1xmrYp3ejxuFHr3G6z7uiQ=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:01:24.648] [INFO] devops-prov.edgegrid - response {
+  debugId: 4,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '25ea3e73-2964-4395-b3de-c0433af359fa, 25ea3e73-2964-4395-b3de-c0433af359fa',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'x-trace-id': 'e2f9628f41e057ae',
+    'content-length': '554',
+    date: 'Thu, 26 May 2022 09:01:24 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_652996",\n' +
+    '  "propertyName" : "config-rapid-dj.xml",\n' +
+    '  "accountId" : "act_B-C-1ED34DK",\n' +
+    '  "contractId" : "ctr_C-1ED34DY",\n' +
+    '  "groupId" : "grp_178772",\n' +
+    '  "assetId" : "aid_10841187",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 197,\n' +
+    '      "updatedByUser" : "djha",\n' +
+    '      "updatedDate" : "2022-05-09T03:04:21Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE",\n' +
+    '      "etag" : "e3e6ede176112496f8c38cb206edb07fe722dddd",\n' +
+    '      "productId" : "prd_SPM",\n' +
+    '      "ruleFormat" : "latest"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2022-05-26T19:01:24.649] [INFO] devops-prov.openclient - Status code:  200
+[2022-05-26T19:01:24.649] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_652996",
+  "propertyName" : "config-rapid-dj.xml",
+  "accountId" : "act_B-C-1ED34DK",
+  "contractId" : "ctr_C-1ED34DY",
+  "groupId" : "grp_178772",
+  "assetId" : "aid_10841187",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 197,
+      "updatedByUser" : "djha",
+      "updatedDate" : "2022-05-09T03:04:21Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE",
+      "etag" : "e3e6ede176112496f8c38cb206edb07fe722dddd",
+      "productId" : "prd_SPM",
+      "ruleFormat" : "latest"
+    } ]
+  }
+}
+[2022-05-26T19:01:24.649] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/client-settings
+[2022-05-26T19:01:24.650] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:24+0000;nonce=98cab59f-55ea-498d-a63c-51fe04e77ba9;
+
+[2022-05-26T19:01:24.650] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:01:24.650] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:01:24.650] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/client-settings?accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:24+0000;nonce=98cab59f-55ea-498d-a63c-51fe04e77ba9;" 
+
+[2022-05-26T19:01:24.650] [INFO] devops-prov.edgegrid.helpers - Signing key: Iw2vGLlGg8yLmd7l+Dh3bBExzR/udWDkx1HRw1NISLo=
+
+[2022-05-26T19:01:24.650] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:24+0000;nonce=98cab59f-55ea-498d-a63c-51fe04e77ba9;signature=GIxweedIjY2b8wr09m/fYlz/hqjIiDnvEGxy50ZdvXg=
+
+[2022-05-26T19:01:24.652] [INFO] devops-prov.edgegrid - request {
+  debugId: 5,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/client-settings?accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:24+0000;nonce=98cab59f-55ea-498d-a63c-51fe04e77ba9;signature=GIxweedIjY2b8wr09m/fYlz/hqjIiDnvEGxy50ZdvXg=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:01:25.503] [INFO] devops-prov.edgegrid - response {
+  debugId: 5,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '87e71088-40f8-4975-bdf3-9db2c75a8236, 87e71088-40f8-4975-bdf3-9db2c75a8236',
+    'papi-cache-status': 'CACHE_MISS',
+    'cache-control': 'no-store',
+    vary: 'accept-encoding',
+    'x-trace-id': 'd3bd628f41e3561e',
+    'content-length': '58',
+    date: 'Thu, 26 May 2022 09:01:25 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n  "ruleFormat" : "v2021-09-22",\n  "usePrefixes" : true\n}'
+}
+[2022-05-26T19:01:25.504] [INFO] devops-prov.openclient - Status code:  200
+[2022-05-26T19:01:25.504] [INFO] devops-prov.openclient - Body:  {
+  "ruleFormat" : "v2021-09-22",
+  "usePrefixes" : true
+}
+[2022-05-26T19:01:25.504] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/652996/versions/197/rules
+[2022-05-26T19:01:25.505] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:25+0000;nonce=b46bc88c-9c47-4335-a437-95a40324f120;
+
+[2022-05-26T19:01:25.505] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:01:25.505] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:01:25.505] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/652996/versions/197/rules?accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:25+0000;nonce=b46bc88c-9c47-4335-a437-95a40324f120;" 
+
+[2022-05-26T19:01:25.505] [INFO] devops-prov.edgegrid.helpers - Signing key: HUcTGporB/eWOFrEj/aoJfMCm05ddWIcIHs9YitdZPs=
+
+[2022-05-26T19:01:25.505] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:25+0000;nonce=b46bc88c-9c47-4335-a437-95a40324f120;signature=4s1qG7agi2xxMFmOCQLQCXQddC3/HuhTguxpQ7iVysc=
+
+[2022-05-26T19:01:25.506] [INFO] devops-prov.edgegrid - request {
+  debugId: 6,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/197/rules?accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Accept: 'application/vnd.akamai.papirules.v2021-09-22+json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:25+0000;nonce=b46bc88c-9c47-4335-a437-95a40324f120;signature=4s1qG7agi2xxMFmOCQLQCXQddC3/HuhTguxpQ7iVysc=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:01:26.260] [INFO] devops-prov.edgegrid - response {
+  debugId: 6,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'b05fd8e9-f2f7-4299-a0d5-c4c86cec98d7, b05fd8e9-f2f7-4299-a0d5-c4c86cec98d7',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/197/rules?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+    vary: 'accept-encoding',
+    'x-trace-id': 'cf2b628f41e456d4',
+    'content-length': '135',
+    date: 'Thu, 26 May 2022 09:01:26 GMT',
+    connection: 'close'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/652996/versions/197/rules?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK"\n' +
+    '}'
+}
+[2022-05-26T19:01:26.266] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:26+0000;nonce=8a656926-dc15-46bf-ba7f-df99ac475fe8;
+
+[2022-05-26T19:01:26.267] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:01:26.267] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:01:26.267] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/652996/versions/197/rules?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:26+0000;nonce=8a656926-dc15-46bf-ba7f-df99ac475fe8;" 
+
+[2022-05-26T19:01:26.267] [INFO] devops-prov.edgegrid.helpers - Signing key: ObyzICw0bTKzvXREU/Q66BV9RpTRzjV/iLycuseKRic=
+
+[2022-05-26T19:01:26.267] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:26+0000;nonce=8a656926-dc15-46bf-ba7f-df99ac475fe8;signature=Ynmji4LbHjfybwpup3222Lz07UK7ELzC1Q4YgevjGkU=
+
+[2022-05-26T19:01:26.269] [INFO] devops-prov.edgegrid - request {
+  debugId: 7,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/652996/versions/197/rules?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Accept: 'application/vnd.akamai.papirules.v2021-09-22+json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:26+0000;nonce=8a656926-dc15-46bf-ba7f-df99ac475fe8;signature=Ynmji4LbHjfybwpup3222Lz07UK7ELzC1Q4YgevjGkU=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:01:34.545] [INFO] devops-prov.edgegrid - response {
+  debugId: 7,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/vnd.akamai.papirules.v2021-09-22+json;charset=UTF-8',
+    'x-ids-session-id': '25ea3e73-2964-4395-b3de-c0433af359fa, 25ea3e73-2964-4395-b3de-c0433af359fa',
+    'papi-cache-status': 'CACHE_MISS',
+    'x-limit-elements-per-property-limit': '3000',
+    'x-limit-elements-per-property-remaining': '2960',
+    'x-limit-max-nested-rules-limit': '6',
+    'x-limit-max-nested-rules-remaining': '5',
+    'x-limit-matched-includes-per-property-limit': '300',
+    'x-limit-matched-includes-per-property-remaining': '300',
+    'x-limit-max-includes-at-default-rule-limit': '3',
+    'x-limit-max-includes-at-default-rule-remaining': '3',
+    'content-language': 'en-US',
+    link: '<https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/v0/schemas/products/prd_SPM/v2021-09-22>; rel="describedby"',
+    vary: 'Accept, Accept-Encoding',
+    'cache-control': 'no-store',
+    'x-trace-id': 'd3bd628f41e65629',
+    'content-length': '14304',
+    date: 'Thu, 26 May 2022 09:01:34 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "accountId" : "act_B-C-1ED34DK",\n' +
+    '  "contractId" : "ctr_C-1ED34DY",\n' +
+    '  "groupId" : "grp_178772",\n' +
+    '  "propertyId" : "prp_652996",\n' +
+    '  "propertyName" : "config-rapid-dj.xml",\n' +
+    '  "propertyVersion" : 197,\n' +
+    '  "etag" : "fd91eeec883747a4a9fef457d8f526d701686f5e",\n' +
+    '  "rules" : {\n' +
+    '    "name" : "default",\n' +
+    '    "children" : [ {\n' +
+    '      "name" : "Offload origin",\n' +
+    '      "children" : [ {\n' +
+    '        "name" : "CSS and JavaScript",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "7d"\n' +
+    '          }\n' +
+    '        }, {\n' +
+    '          "name" : "prefetch",\n' +
+    '          "options" : {\n' +
+    '            "enabled" : true\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "css", "js" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "any",\n' +
+    '        "comments" : "Override the default caching behavior for CSS and JavaScript"\n' +
+    '      }, {\n' +
+    '        "name" : "Fonts",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "30d"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "eot", "woff", "woff2", "otf", "ttf" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "any",\n' +
+    '        "comments" : "Override the default caching behavior for fonts."\n' +
+    '      }, {\n' +
+    '        "name" : "Images",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "30d"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "jpg", "jpeg", "png", "gif", "webp", "jp2", "ico", "svg", "svgz" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "any",\n' +
+    '        "comments" : "Override the default caching behavior for images."\n' +
+    '      }, {\n' +
+    '        "name" : "Files",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "7d"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "pdf", "doc", "docx", "odt" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "any",\n' +
+    '        "comments" : "Override the default caching behavior for files. Files containing Personal Identified Information (PII) should require Edge authentication or not be cached at all."\n' +
+    '      }, {\n' +
+    '        "name" : "Other static objects",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "7d"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "aif", "aiff", "au", "avi", "bin", "bmp", "cab", "carb", "cct", "cdf", "class", "dcr", "dtd", "exe", "flv", "gcf", "gff", "grv", "hdml", "hqx", "ini", "mov", "mp3", "nc", "pct", "ppc", "pws", "swa", "swf", "txt", "vbs", "w32", "wav", "midi", "wbmp", "wml", "wmlc", "wmls", "wmlsc", "xsd", "zip", "pict", "tif", "tiff", "mid", "jxr", "jar" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "any",\n' +
+    '        "comments" : "Override the default caching behavior for other static objects."\n' +
+    '      }, {\n' +
+    '        "name" : "HTML pages",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "caching",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "MAX_AGE",\n' +
+    '            "mustRevalidate" : false,\n' +
+    '            "ttl" : "11m"\n' +
+    '          }\n' +
+    '        }, {\n' +
+    '          "name" : "cacheKeyQueryParams",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "IGNORE",\n' +
+    '            "exactMatch" : true,\n' +
+    '            "parameters" : [ "gclid", "fbclid", "utm_source", "utm_campaign", "utm_medium", "utm_content" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "fileExtension",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "values" : [ "html", "htm", "php", "jsp", "aspx", "EMPTY_STRING" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Override the default caching behavior for HTML pages cached on edge servers."\n' +
+    '      }, {\n' +
+    '        "name" : "Redirects",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "cacheRedirect",\n' +
+    '          "options" : {\n' +
+    '            "enabled" : "true"\n' +
+    '          }\n' +
+    '        }, {\n' +
+    '          "name" : "chaseRedirects",\n' +
+    '          "options" : {\n' +
+    '            "enabled" : false\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Configure caching for HTTP redirects. The redirect is cached for the same TTL as a 200 HTTP response when this feature is enabled."\n' +
+    '      }, {\n' +
+    '        "name" : "POST responses",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ ],\n' +
+    '        "criteria" : [ ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Define when HTTP POST requests should be cached. You should enable it under a criteria match."\n' +
+    '      }, {\n' +
+    '        "name" : "GraphQL",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "graphqlCaching",\n' +
+    '          "options" : {\n' +
+    '            "enabled" : false\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "path",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "MATCHES_ONE_OF",\n' +
+    '            "normalize" : false,\n' +
+    '            "values" : [ "/graphql" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Define when your GraphQL queries should be cached."\n' +
+    '      }, {\n' +
+    '        "name" : "Uncacheable objects",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "downstreamCache",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "BUST"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "cacheability",\n' +
+    '          "options" : {\n' +
+    '            "matchOperator" : "IS_NOT",\n' +
+    '            "value" : "CACHEABLE"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Configure the default client caching behavior for uncacheable content at the edge."\n' +
+    '      } ],\n' +
+    '      "behaviors" : [ {\n' +
+    '        "name" : "caching",\n' +
+    '        "options" : {\n' +
+    '          "behavior" : "MAX_AGE",\n' +
+    '          "mustRevalidate" : false,\n' +
+    '          "ttl" : "110m"\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "tieredDistribution",\n' +
+    '        "options" : {\n' +
+    '          "enabled" : true,\n' +
+    '          "tieredDistributionMap" : "CH2"\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "validateEntityTag",\n' +
+    '        "options" : {\n' +
+    '          "enabled" : false\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "removeVary",\n' +
+    '        "options" : {\n' +
+    '          "enabled" : false\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "cacheError",\n' +
+    '        "options" : {\n' +
+    '          "enabled" : true,\n' +
+    '          "preserveStale" : true,\n' +
+    '          "ttl" : "10s"\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "cacheKeyQueryParams",\n' +
+    '        "options" : {\n' +
+    '          "behavior" : "INCLUDE_ALL_ALPHABETIZE_ORDER"\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "prefreshCache",\n' +
+    '        "options" : {\n' +
+    '          "enabled" : true,\n' +
+    '          "prefreshval" : 90\n' +
+    '        }\n' +
+    '      }, {\n' +
+    '        "name" : "downstreamCache",\n' +
+    '        "options" : {\n' +
+    '          "allowBehavior" : "LESSER",\n' +
+    '          "behavior" : "ALLOW",\n' +
+    '          "sendHeaders" : "CACHE_CONTROL",\n' +
+    '          "sendPrivate" : false\n' +
+    '        }\n' +
+    '      } ],\n' +
+    '      "criteria" : [ ],\n' +
+    '      "criteriaMustSatisfy" : "all",\n' +
+    '      "comments" : "Control the settings related to caching content at the edge and in the browser. As a result, fewer requests go to your origin, fewer bytes leave your data centers, and your assets are closer to your users."\n' +
+    '    }, {\n' +
+    '      "name" : "Minimize payload",\n' +
+    '      "children" : [ {\n' +
+    '        "name" : "Compressible objects",\n' +
+    '        "children" : [ ],\n' +
+    '        "behaviors" : [ {\n' +
+    '          "name" : "gzipResponse",\n' +
+    '          "options" : {\n' +
+    '            "behavior" : "ALWAYS"\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteria" : [ {\n' +
+    '          "name" : "contentType",\n' +
+    '          "options" : {\n' +
+    '            "matchCaseSensitive" : false,\n' +
+    '            "matchOperator" : "IS_ONE_OF",\n' +
+    '            "matchWildcard" : true,\n' +
+    '            "values" : [ "application/*javascript*", "application/*json*", "application/*xml*", "application/text*", "application/vnd-ms-fontobject", "application/vnd.microsoft.icon", "application/x-font-opentype", "application/x-font-truetype", "application/x-font-ttf", "application/xmlfont/eot", "font/eot", "font/opentype", "font/otf", "image/svg+xml", "image/vnd.microsoft.icon", "image/x-icon", "text/*", "application/octet-stream*", "application/x-font-eot*", "font/ttf", "application/font-ttf", "application/font-sfnt", "application/x-tgif" ]\n' +
+    '          }\n' +
+    '        } ],\n' +
+    '        "criteriaMustSatisfy" : "all",\n' +
+    '        "comments" : "Serve gzip compressed content for text-based formats."\n' +
+    '      } ],\n' +
+    '      "behaviors" : [ ],\n' +
+    '      "criteria" : [ ],\n' +
+    '      "criteriaMustSatisfy" : "all",\n' +
+    '      "comments" : "Control the settings that reduce the size of the delivered content and decrease the number of bytes sent by your properties. This allows you to cut down the network overhead of your website or API."\n' +
+    '    }, {\n' +
+    '      "name" : "Test",\n' +
+    '      "children" : [ ],\n' +
+    '      "behaviors" : [ {\n' +
+    '        "name" : "modifyOutgoingResponseHeader",\n' +
+    '        "options" : {\n' +
+    '          "action" : "MODIFY",\n' +
+    '          "avoidDuplicateHeaders" : false,\n' +
+    '          "customHeaderName" : "apikey_1",\n' +
+    '          "newHeaderValue" : "xyz123",\n' +
+    '          "standardModifyHeaderName" : "OTHER"\n' +
+    '        }\n' +
+    '      } ],\n' +
+    '      "criteria" : [ ],\n' +
+    '      "criteriaMustSatisfy" : "all"\n' +
+    '    } ],\n' +
+    '    "behaviors" : [ {\n' +
+    '      "name" : "origin",\n' +
+    '      "options" : {\n' +
+    '        "cacheKeyHostname" : "REQUEST_HOST_HEADER",\n' +
+    '        "compress" : true,\n' +
+    '        "enableTrueClientIp" : false,\n' +
+    '        "forwardHostHeader" : "ORIGIN_HOSTNAME",\n' +
+    '        "hostname" : "romche.com",\n' +
+    '        "httpPort" : 80,\n' +
+    '        "httpsPort" : 443,\n' +
+    '        "originCertificate" : "",\n' +
+    '        "originSni" : true,\n' +
+    '        "originType" : "CUSTOMER",\n' +
+    '        "ports" : "",\n' +
+    '        "verificationMode" : "PLATFORM_SETTINGS"\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "cpCode",\n' +
+    '      "options" : {\n' +
+    '        "value" : {\n' +
+    '          "cpCodeLimits" : null,\n' +
+    '          "createdDate" : 1.601539639E12,\n' +
+    '          "description" : "config-rapid-dj.xml",\n' +
+    '          "id" : 1096058,\n' +
+    '          "name" : "config-rapid-dj.xml",\n' +
+    '          "products" : [ "SPM" ]\n' +
+    '        }\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "allowPost",\n' +
+    '      "options" : {\n' +
+    '        "allowWithoutContentLength" : true,\n' +
+    '        "enabled" : true\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "realUserMonitoring",\n' +
+    '      "options" : {\n' +
+    '        "enabled" : true\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "setVariable",\n' +
+    '      "options" : {\n' +
+    '        "extractLocation" : "CLIENT_REQUEST_HEADER",\n' +
+    '        "headerName" : "api-key",\n' +
+    '        "transform" : "NONE",\n' +
+    '        "valueSource" : "EXTRACT",\n' +
+    '        "variableName" : "PMUSER_API_KEY_VALUE"\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "rapid",\n' +
+    '      "options" : {\n' +
+    '        "enabled" : false\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "globalRequestNumber",\n' +
+    '      "options" : {\n' +
+    '        "headerName" : "Akamai-GRN",\n' +
+    '        "outputOption" : "REQUEST_HEADER"\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "edgeRedirector",\n' +
+    '      "options" : {\n' +
+    '        "enabled" : false\n' +
+    '      }\n' +
+    '    }, {\n' +
+    '      "name" : "cachePost",\n' +
+    '      "options" : {\n' +
+    '        "enabled" : true,\n' +
+    '        "useBody" : "MD5"\n' +
+    '      }\n' +
+    '    } ],\n' +
+    '    "options" : {\n' +
+    '      "is_secure" : false\n' +
+    '    },\n' +
+    '    "variables" : [ {\n' +
+    '      "name" : "PMUSER_API_KEY_VALUE",\n' +
+    '      "value" : null,\n' +
+    '      "description" : null,\n' +
+    '      "hidden" : false,\n' +
+    '      "sensitive" : false\n' +
+    '    }, {\n' +
+    '      "name" : "PMUSER_KEY_HEADER",\n' +
+    '      "value" : "key_header",\n' +
+    '      "description" : null,\n' +
+    '      "hidden" : false,\n' +
+    '      "sensitive" : false\n' +
+    '    }, {\n' +
+    '      "name" : "PMUSER_UUID_FINAL",\n' +
+    '      "value" : null,\n' +
+    '      "description" : "Variable to hold UUID value",\n' +
+    '      "hidden" : false,\n' +
+    '      "sensitive" : false\n' +
+    '    }, {\n' +
+    '      "name" : "PMUSER_API_TEST",\n' +
+    '      "value" : null,\n' +
+    '      "description" : null,\n' +
+    '      "hidden" : false,\n' +
+    '      "sensitive" : false\n' +
+    '    }, {\n' +
+    '      "name" : "PMUSER_REQ_TEST",\n' +
+    '      "value" : null,\n' +
+    '      "description" : null,\n' +
+    '      "hidden" : false,\n' +
+    '      "sensitive" : false\n' +
+    '    } ],\n' +
+    '    "comments" : "The Default Rule template contains all the necessary and recommended behaviors. Rules are evaluated from top to bottom and the last matching rule wins."\n' +
+    '  },\n' +
+    '  "warnings" : [ {\n' +
+    '    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/generic_behavior_issue.all_methods_on_ps",\n' +
+    '    "errorLocation" : "#/rules/behaviors/2",\n' +
+    '    "detail" : "The \\"Allow All Methods on Parent Servers\\" behavior must also be added for proper functionality"\n' +
+    '  }, {\n' +
+    '    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/generic_behavior_issue.rum_eol",\n' +
+    '    "errorLocation" : "#/rules/behaviors/3",\n' +
+    `    "detail" : "<strong> Important </strong>: We recommend using an mPulse behavior instead on this property. mPulse is Akamai's recommended source of RUM data going forward"\n` +
+    '  }, {\n' +
+    '    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/need_feature",\n' +
+    '    "errorLocation" : "#/rules/behaviors/8",\n' +
+    '    "detail" : "When using the post body in the cache key option in `Cache POST Responses`, it is recommended to further control caching using Cache ID Modification. Caution is advised as since there might be significant cache pollution as a result."\n' +
+    '  } ],\n' +
+    '  "ruleFormat" : "v2021-09-22"\n' +
+    '}'
+}
+[2022-05-26T19:01:34.550] [INFO] devops-prov.openclient - Status code:  200
+[2022-05-26T19:01:34.550] [INFO] devops-prov.openclient - Body:  {
+  "accountId" : "act_B-C-1ED34DK",
+  "contractId" : "ctr_C-1ED34DY",
+  "groupId" : "grp_178772",
+  "propertyId" : "prp_652996",
+  "propertyName" : "config-rapid-dj.xml",
+  "propertyVersion" : 197,
+  "etag" : "fd91eeec883747a4a9fef457d8f526d701686f5e",
+  "rules" : {
+    "name" : "default",
+    "children" : [ {
+      "name" : "Offload origin",
+      "children" : [ {
+        "name" : "CSS and JavaScript",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "7d"
+          }
+        }, {
+          "name" : "prefetch",
+          "options" : {
+            "enabled" : true
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "css", "js" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "any",
+        "comments" : "Override the default caching behavior for CSS and JavaScript"
+      }, {
+        "name" : "Fonts",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "30d"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "eot", "woff", "woff2", "otf", "ttf" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "any",
+        "comments" : "Override the default caching behavior for fonts."
+      }, {
+        "name" : "Images",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "30d"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "jpg", "jpeg", "png", "gif", "webp", "jp2", "ico", "svg", "svgz" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "any",
+        "comments" : "Override the default caching behavior for images."
+      }, {
+        "name" : "Files",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "7d"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "pdf", "doc", "docx", "odt" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "any",
+        "comments" : "Override the default caching behavior for files. Files containing Personal Identified Information (PII) should require Edge authentication or not be cached at all."
+      }, {
+        "name" : "Other static objects",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "7d"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "aif", "aiff", "au", "avi", "bin", "bmp", "cab", "carb", "cct", "cdf", "class", "dcr", "dtd", "exe", "flv", "gcf", "gff", "grv", "hdml", "hqx", "ini", "mov", "mp3", "nc", "pct", "ppc", "pws", "swa", "swf", "txt", "vbs", "w32", "wav", "midi", "wbmp", "wml", "wmlc", "wmls", "wmlsc", "xsd", "zip", "pict", "tif", "tiff", "mid", "jxr", "jar" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "any",
+        "comments" : "Override the default caching behavior for other static objects."
+      }, {
+        "name" : "HTML pages",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "caching",
+          "options" : {
+            "behavior" : "MAX_AGE",
+            "mustRevalidate" : false,
+            "ttl" : "11m"
+          }
+        }, {
+          "name" : "cacheKeyQueryParams",
+          "options" : {
+            "behavior" : "IGNORE",
+            "exactMatch" : true,
+            "parameters" : [ "gclid", "fbclid", "utm_source", "utm_campaign", "utm_medium", "utm_content" ]
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "fileExtension",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "values" : [ "html", "htm", "php", "jsp", "aspx", "EMPTY_STRING" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Override the default caching behavior for HTML pages cached on edge servers."
+      }, {
+        "name" : "Redirects",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "cacheRedirect",
+          "options" : {
+            "enabled" : "true"
+          }
+        }, {
+          "name" : "chaseRedirects",
+          "options" : {
+            "enabled" : false
+          }
+        } ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Configure caching for HTTP redirects. The redirect is cached for the same TTL as a 200 HTTP response when this feature is enabled."
+      }, {
+        "name" : "POST responses",
+        "children" : [ ],
+        "behaviors" : [ ],
+        "criteria" : [ ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Define when HTTP POST requests should be cached. You should enable it under a criteria match."
+      }, {
+        "name" : "GraphQL",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "graphqlCaching",
+          "options" : {
+            "enabled" : false
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "path",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "MATCHES_ONE_OF",
+            "normalize" : false,
+            "values" : [ "/graphql" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Define when your GraphQL queries should be cached."
+      }, {
+        "name" : "Uncacheable objects",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "downstreamCache",
+          "options" : {
+            "behavior" : "BUST"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "cacheability",
+          "options" : {
+            "matchOperator" : "IS_NOT",
+            "value" : "CACHEABLE"
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Configure the default client caching behavior for uncacheable content at the edge."
+      } ],
+      "behaviors" : [ {
+        "name" : "caching",
+        "options" : {
+          "behavior" : "MAX_AGE",
+          "mustRevalidate" : false,
+          "ttl" : "110m"
+        }
+      }, {
+        "name" : "tieredDistribution",
+        "options" : {
+          "enabled" : true,
+          "tieredDistributionMap" : "CH2"
+        }
+      }, {
+        "name" : "validateEntityTag",
+        "options" : {
+          "enabled" : false
+        }
+      }, {
+        "name" : "removeVary",
+        "options" : {
+          "enabled" : false
+        }
+      }, {
+        "name" : "cacheError",
+        "options" : {
+          "enabled" : true,
+          "preserveStale" : true,
+          "ttl" : "10s"
+        }
+      }, {
+        "name" : "cacheKeyQueryParams",
+        "options" : {
+          "behavior" : "INCLUDE_ALL_ALPHABETIZE_ORDER"
+        }
+      }, {
+        "name" : "prefreshCache",
+        "options" : {
+          "enabled" : true,
+          "prefreshval" : 90
+        }
+      }, {
+        "name" : "downstreamCache",
+        "options" : {
+          "allowBehavior" : "LESSER",
+          "behavior" : "ALLOW",
+          "sendHeaders" : "CACHE_CONTROL",
+          "sendPrivate" : false
+        }
+      } ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : "Control the settings related to caching content at the edge and in the browser. As a result, fewer requests go to your origin, fewer bytes leave your data centers, and your assets are closer to your users."
+    }, {
+      "name" : "Minimize payload",
+      "children" : [ {
+        "name" : "Compressible objects",
+        "children" : [ ],
+        "behaviors" : [ {
+          "name" : "gzipResponse",
+          "options" : {
+            "behavior" : "ALWAYS"
+          }
+        } ],
+        "criteria" : [ {
+          "name" : "contentType",
+          "options" : {
+            "matchCaseSensitive" : false,
+            "matchOperator" : "IS_ONE_OF",
+            "matchWildcard" : true,
+            "values" : [ "application/*javascript*", "application/*json*", "application/*xml*", "application/text*", "application/vnd-ms-fontobject", "application/vnd.microsoft.icon", "application/x-font-opentype", "application/x-font-truetype", "application/x-font-ttf", "application/xmlfont/eot", "font/eot", "font/opentype", "font/otf", "image/svg+xml", "image/vnd.microsoft.icon", "image/x-icon", "text/*", "application/octet-stream*", "application/x-font-eot*", "font/ttf", "application/font-ttf", "application/font-sfnt", "application/x-tgif" ]
+          }
+        } ],
+        "criteriaMustSatisfy" : "all",
+        "comments" : "Serve gzip compressed content for text-based formats."
+      } ],
+      "behaviors" : [ ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all",
+      "comments" : "Control the settings that reduce the size of the delivered content and decrease the number of bytes sent by your properties. This allows you to cut down the network overhead of your website or API."
+    }, {
+      "name" : "Test",
+      "children" : [ ],
+      "behaviors" : [ {
+        "name" : "modifyOutgoingResponseHeader",
+        "options" : {
+          "action" : "MODIFY",
+          "avoidDuplicateHeaders" : false,
+          "customHeaderName" : "apikey_1",
+          "newHeaderValue" : "xyz123",
+          "standardModifyHeaderName" : "OTHER"
+        }
+      } ],
+      "criteria" : [ ],
+      "criteriaMustSatisfy" : "all"
+    } ],
+    "behaviors" : [ {
+      "name" : "origin",
+      "options" : {
+        "cacheKeyHostname" : "REQUEST_HOST_HEADER",
+        "compress" : true,
+        "enableTrueClientIp" : false,
+        "forwardHostHeader" : "ORIGIN_HOSTNAME",
+        "hostname" : "romche.com",
+        "httpPort" : 80,
+        "httpsPort" : 443,
+        "originCertificate" : "",
+        "originSni" : true,
+        "originType" : "CUSTOMER",
+        "ports" : "",
+        "verificationMode" : "PLATFORM_SETTINGS"
+      }
+    }, {
+      "name" : "cpCode",
+      "options" : {
+        "value" : {
+          "cpCodeLimits" : null,
+          "createdDate" : 1.601539639E12,
+          "description" : "config-rapid-dj.xml",
+          "id" : 1096058,
+          "name" : "config-rapid-dj.xml",
+          "products" : [ "SPM" ]
+        }
+      }
+    }, {
+      "name" : "allowPost",
+      "options" : {
+        "allowWithoutContentLength" : true,
+        "enabled" : true
+      }
+    }, {
+      "name" : "realUserMonitoring",
+      "options" : {
+        "enabled" : true
+      }
+    }, {
+      "name" : "setVariable",
+      "options" : {
+        "extractLocation" : "CLIENT_REQUEST_HEADER",
+        "headerName" : "api-key",
+        "transform" : "NONE",
+        "valueSource" : "EXTRACT",
+        "variableName" : "PMUSER_API_KEY_VALUE"
+      }
+    }, {
+      "name" : "rapid",
+      "options" : {
+        "enabled" : false
+      }
+    }, {
+      "name" : "globalRequestNumber",
+      "options" : {
+        "headerName" : "Akamai-GRN",
+        "outputOption" : "REQUEST_HEADER"
+      }
+    }, {
+      "name" : "edgeRedirector",
+      "options" : {
+        "enabled" : false
+      }
+    }, {
+      "name" : "cachePost",
+      "options" : {
+        "enabled" : true,
+        "useBody" : "MD5"
+      }
+    } ],
+    "options" : {
+      "is_secure" : false
+    },
+    "variables" : [ {
+      "name" : "PMUSER_API_KEY_VALUE",
+      "value" : null,
+      "description" : null,
+      "hidden" : false,
+      "sensitive" : false
+    }, {
+      "name" : "PMUSER_KEY_HEADER",
+      "value" : "key_header",
+      "description" : null,
+      "hidden" : false,
+      "sensitive" : false
+    }, {
+      "name" : "PMUSER_UUID_FINAL",
+      "value" : null,
+      "description" : "Variable to hold UUID value",
+      "hidden" : false,
+      "sensitive" : false
+    }, {
+      "name" : "PMUSER_API_TEST",
+      "value" : null,
+      "description" : null,
+      "hidden" : false,
+      "sensitive" : false
+    }, {
+      "name" : "PMUSER_REQ_TEST",
+      "value" : null,
+      "description" : null,
+      "hidden" : false,
+      "sensitive" : false
+    } ],
+    "comments" : "The Default Rule template contains all the necessary and recommended behaviors. Rules are evaluated from top to bottom and the last matching rule wins."
+  },
+  "warnings" : [ {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/generic_behavior_issue.all_methods_on_ps",
+    "errorLocation" : "#/rules/behaviors/2",
+    "detail" : "The \"Allow All Methods on Parent Servers\" behavior must also be added for proper functionality"
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/generic_behavior_issue.rum_eol",
+    "errorLocation" : "#/rules/behaviors/3",
+    "detail" : "<strong> Important </strong>: We recommend using an mPulse behavior instead on this property. mPulse is Akamai's recommended source of RUM data going forward"
+  }, {
+    "type" : "https://problems.luna.akamaiapis.net/papi/v0/validation/need_feature",
+    "errorLocation" : "#/rules/behaviors/8",
+    "detail" : "When using the post body in the cache key option in `Cache POST Responses`, it is recommended to further control caching using Cache ID Modification. Caution is advised as since there might be significant cache pollution as a result."
+  } ],
+  "ruleFormat" : "v2021-09-22"
+}
+[2022-05-26T19:01:34.551] [INFO] pm-cli - Creating new PM CLI property with data:  {
+    "projectName": "dj26May2022-config-rapid-dj.xml",
+    "productId": "prd_SPM",
+    "variableMode": "no-var",
+    "contractId": "ctr_C-1ED34DY",
+    "propertyId": 652996,
+    "groupId": "178772",
+    "propertyName": "config-rapid-dj.xml",
+    "propertyVersion": 197,
+    "isInRetryMode": false,
+    "secureOption": false
+}
+[2022-05-26T19:01:34.551] [INFO] pm-cli.project - creating property /Users/djha/Desktop/Google Drive/devOps/github-actions/dj26May2022-config-rapid-dj.xml
+[2022-05-26T19:01:34.554] [INFO] devops-prov.project - Overriding edgegrid config with project default:  { section: 'papi' }
+[2022-05-26T19:01:34.555] [INFO] pm-cli.envionment - creating property 'dj26May2022-config-rapid-dj.xml
+[2022-05-26T19:01:34.555] [INFO] devops-prov.openclient - Requesting: POST /papi/v1/properties?groupId=178772&contractId=ctr_C-1ED34DY
+[2022-05-26T19:01:34.555] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:34+0000;nonce=f0e4cf2b-8467-4562-9988-d15084ff867d;
+
+[2022-05-26T19:01:34.555] [INFO] devops-prov.edgegrid.helpers - Body is "{"productId":"prd_SPM","propertyName":"dj26May2022-config-rapid-dj.xml","cloneFrom":{"propertyId":652996,"version":197,"copyHostnames":false}}"
+[2022-05-26T19:01:34.556] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 142
+[2022-05-26T19:01:34.556] [INFO] devops-prov.edgegrid.helpers - Signing content: "{"productId":"prd_SPM","propertyName":"dj26May2022-config-rapid-dj.xml","cloneFrom":{"propertyId":652996,"version":197,"copyHostnames":false}}"
+[2022-05-26T19:01:34.556] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY {"productId":"prd_SPM","propertyName":"dj26May2022-config-rapid-dj.xml","cloneFrom":{"propertyId":652996,"version":197,"copyHostnames":false}}
+[2022-05-26T19:01:34.556] [INFO] devops-prov.edgegrid.helpers - Content hash is "MUBOU6rS0nCtrBtTctE5XzW2I0X/EdokbjpSHJfIymI="
+[2022-05-26T19:01:34.556] [INFO] devops-prov.edgegrid.helpers - Data to sign: "POST	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties?groupId=178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK		MUBOU6rS0nCtrBtTctE5XzW2I0X/EdokbjpSHJfIymI=	EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:34+0000;nonce=f0e4cf2b-8467-4562-9988-d15084ff867d;" 
+
+[2022-05-26T19:01:34.556] [INFO] devops-prov.edgegrid.helpers - Signing key: /dIwDwypGX2N/TxOVUtsXi7U6Eytqj9LaDak73RbeWQ=
+
+[2022-05-26T19:01:34.556] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:34+0000;nonce=f0e4cf2b-8467-4562-9988-d15084ff867d;signature=tunSchuURF1aCsp4Y2C22qxu2rZrFk0XBE+HkCWvXUE=
+
+[2022-05-26T19:01:34.557] [INFO] devops-prov.edgegrid - request {
+  debugId: 8,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties?groupId=178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+  method: 'POST',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'Content-Type': 'application/json',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:34+0000;nonce=f0e4cf2b-8467-4562-9988-d15084ff867d;signature=tunSchuURF1aCsp4Y2C22qxu2rZrFk0XBE+HkCWvXUE=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net',
+    'content-length': 142
+  },
+  body: '{"productId":"prd_SPM","propertyName":"dj26May2022-config-rapid-dj.xml","cloneFrom":{"propertyId":652996,"version":197,"copyHostnames":false}}'
+}
+[2022-05-26T19:01:52.780] [INFO] devops-prov.edgegrid - response {
+  debugId: 8,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'f3a8a0b7-75e9-4dd0-9451-a6191f441480, f3a8a0b7-75e9-4dd0-9451-a6191f441480',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/prp_803491?groupId=grp_178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+    'x-limit-properties-per-contract-limit': '1000',
+    'x-limit-properties-per-contract-remaining': '661',
+    vary: 'accept-encoding',
+    'x-trace-id': 'cf2b628f41ed56ff',
+    'content-length': '128',
+    date: 'Thu, 26 May 2022 09:01:52 GMT',
+    connection: 'close'
+  },
+  statusCode: 201,
+  body: '{\n' +
+    '  "propertyLink" : "/papi/v1/properties/prp_803491?groupId=grp_178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK"\n' +
+    '}'
+}
+[2022-05-26T19:01:52.780] [INFO] devops-prov.openclient - Status code:  201
+[2022-05-26T19:01:52.780] [INFO] devops-prov.openclient - Body:  {
+  "propertyLink" : "/papi/v1/properties/prp_803491?groupId=grp_178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK"
+}
+[2022-05-26T19:01:52.781] [INFO] pm-cli.envionment - propData:  {
+  propertyLink: '/papi/v1/properties/prp_803491?groupId=grp_178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK'
+}
+[2022-05-26T19:01:52.781] [INFO] devops-prov.envionment - results:  [
+  '/papi/v1/properties/prp_803491?groupId=grp_178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+  'prp_',
+  '803491',
+  index: 0,
+  input: '/papi/v1/properties/prp_803491?groupId=grp_178772&contractId=ctr_C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+  groups: undefined
+]
+[2022-05-26T19:01:52.781] [INFO] pm-cli.envionment - Checking latest version of 'dj26May2022-config-rapid-dj.xml'
+[2022-05-26T19:01:52.781] [INFO] devops-prov.openclient - Requesting: GET /papi/v1/properties/803491/versions/latest
+[2022-05-26T19:01:52.782] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:52+0000;nonce=ae799026-3200-4caa-818f-caf716a1ef49;
+
+[2022-05-26T19:01:52.782] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:01:52.782] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:01:52.782] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/803491/versions/latest?accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:52+0000;nonce=ae799026-3200-4caa-818f-caf716a1ef49;" 
+
+[2022-05-26T19:01:52.782] [INFO] devops-prov.edgegrid.helpers - Signing key: vMFG+5zQEXLhwQbNrY6xs+jLNCPqtRQI0pkb7bKESf4=
+
+[2022-05-26T19:01:52.782] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:52+0000;nonce=ae799026-3200-4caa-818f-caf716a1ef49;signature=s8pn8kDJQrtEGlOhQkIyP+awvVPQHHI6ssmQCehysCk=
+
+[2022-05-26T19:01:52.783] [INFO] devops-prov.edgegrid - request {
+  debugId: 9,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/803491/versions/latest?accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:52+0000;nonce=ae799026-3200-4caa-818f-caf716a1ef49;signature=s8pn8kDJQrtEGlOhQkIyP+awvVPQHHI6ssmQCehysCk=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:01:54.160] [INFO] devops-prov.edgegrid - response {
+  debugId: 9,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': 'd16a7d0f-14fe-4792-b5e6-0368ac3425d0, d16a7d0f-14fe-4792-b5e6-0368ac3425d0',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/prp_803491/versions/1?accountSwitchKey=B-C-1ED34DK',
+    vary: 'accept-encoding',
+    'x-trace-id': 'dda7628f41fc5691',
+    'content-length': '94',
+    date: 'Thu, 26 May 2022 09:01:54 GMT',
+    connection: 'close'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "versionLink" : "/papi/v1/properties/prp_803491/versions/1?accountSwitchKey=B-C-1ED34DK"\n' +
+    '}'
+}
+[2022-05-26T19:01:54.160] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:54+0000;nonce=e17f112b-b3b0-4fd7-a513-1b2ab634b5f3;
+
+[2022-05-26T19:01:54.160] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:01:54.160] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:01:54.161] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/prp_803491/versions/1?accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:54+0000;nonce=e17f112b-b3b0-4fd7-a513-1b2ab634b5f3;" 
+
+[2022-05-26T19:01:54.161] [INFO] devops-prov.edgegrid.helpers - Signing key: nBuRk7kdKHiCR1tBuPDG03ka637IoUnBJnURExqnvE4=
+
+[2022-05-26T19:01:54.161] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:54+0000;nonce=e17f112b-b3b0-4fd7-a513-1b2ab634b5f3;signature=JtiTKPBi+kPabVtgPdi1bWcXez7dqNjZaqEzdoNjPsc=
+
+[2022-05-26T19:01:54.162] [INFO] devops-prov.edgegrid - request {
+  debugId: 10,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/prp_803491/versions/1?accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:54+0000;nonce=e17f112b-b3b0-4fd7-a513-1b2ab634b5f3;signature=JtiTKPBi+kPabVtgPdi1bWcXez7dqNjZaqEzdoNjPsc=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:01:54.625] [INFO] devops-prov.edgegrid - response {
+  debugId: 10,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '25ea3e73-2964-4395-b3de-c0433af359fa, 25ea3e73-2964-4395-b3de-c0433af359fa',
+    'papi-cache-status': 'CACHE_MISS',
+    location: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/803491/versions/1?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+    vary: 'accept-encoding',
+    'x-trace-id': 'dda7628f420256ab',
+    'content-length': '127',
+    date: 'Thu, 26 May 2022 09:01:54 GMT',
+    connection: 'close'
+  },
+  statusCode: 302,
+  body: '{\n' +
+    '  "redirectLink" : "/papi/v1/properties/803491/versions/1?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK"\n' +
+    '}'
+}
+[2022-05-26T19:01:54.626] [INFO] devops-prov.edgegrid.auth - Unsigned authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:54+0000;nonce=c203bfea-99ca-4c70-9745-896913e31403;
+
+[2022-05-26T19:01:54.626] [INFO] devops-prov.edgegrid.helpers - Body is ""
+[2022-05-26T19:01:54.626] [DEBUG] devops-prov.edgegrid.helpers - PREPARED BODY LENGTH 0
+[2022-05-26T19:01:54.626] [INFO] devops-prov.edgegrid.helpers - Data to sign: "GET	https	akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net	/papi/v1/properties/803491/versions/1?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK			EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:54+0000;nonce=c203bfea-99ca-4c70-9745-896913e31403;" 
+
+[2022-05-26T19:01:54.626] [INFO] devops-prov.edgegrid.helpers - Signing key: nBuRk7kdKHiCR1tBuPDG03ka637IoUnBJnURExqnvE4=
+
+[2022-05-26T19:01:54.626] [INFO] devops-prov.edgegrid.auth - Signed authorization header: EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:54+0000;nonce=c203bfea-99ca-4c70-9745-896913e31403;signature=noNVd8+ABWSLgKs1J5FDMC6+Im37rQF+wujqnwhKZBM=
+
+[2022-05-26T19:01:54.627] [INFO] devops-prov.edgegrid - request {
+  debugId: 11,
+  uri: 'https://akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net/papi/v1/properties/803491/versions/1?groupId=178772&contractId=C-1ED34DY&accountSwitchKey=B-C-1ED34DK',
+  method: 'GET',
+  headers: {
+    'X-User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    'User-Agent': 'Akamai-PD; Version=0.7.7-RELEASE;pm-cli;',
+    Authorization: 'EG1-HMAC-SHA256 client_token=akab-f4nd6r7vpppp463v-xjnzti443pkescqb;access_token=akab-y7qgr3diwz34mc6t-ud2w7t4vcbzkeowo;timestamp=20220526T09:01:54+0000;nonce=c203bfea-99ca-4c70-9745-896913e31403;signature=noNVd8+ABWSLgKs1J5FDMC6+Im37rQF+wujqnwhKZBM=',
+    host: 'akab-qjxnkqjqysxhwgmf-3d7tv4nn43ff7hlp.luna.akamaiapis.net'
+  }
+}
+[2022-05-26T19:01:55.751] [INFO] devops-prov.edgegrid - response {
+  debugId: 11,
+  headers: {
+    server: 'nginx',
+    'content-type': 'application/json;charset=UTF-8',
+    'x-ids-session-id': '8c0dcb6d-5628-443e-9a17-91d46045ece8, 8c0dcb6d-5628-443e-9a17-91d46045ece8',
+    'papi-cache-status': 'CACHE_MISS',
+    vary: 'accept,accept-encoding',
+    'cache-control': 'no-store',
+    'x-trace-id': 'dda7628f420256ab',
+    'content-length': '564',
+    date: 'Thu, 26 May 2022 09:01:55 GMT',
+    connection: 'close'
+  },
+  statusCode: 200,
+  body: '{\n' +
+    '  "propertyId" : "prp_803491",\n' +
+    '  "propertyName" : "dj26May2022-config-rapid-dj.xml",\n' +
+    '  "accountId" : "act_B-C-1ED34DK",\n' +
+    '  "contractId" : "ctr_C-1ED34DY",\n' +
+    '  "groupId" : "grp_178772",\n' +
+    '  "assetId" : "aid_11025314",\n' +
+    '  "versions" : {\n' +
+    '    "items" : [ {\n' +
+    '      "propertyVersion" : 1,\n' +
+    '      "updatedByUser" : "djha",\n' +
+    '      "updatedDate" : "2022-05-26T09:01:50Z",\n' +
+    '      "productionStatus" : "INACTIVE",\n' +
+    '      "stagingStatus" : "INACTIVE",\n' +
+    '      "etag" : "8faca7cbff148989393cf0cbd1814cb1439a4bc2",\n' +
+    '      "productId" : "prd_SPM",\n' +
+    '      "ruleFormat" : "latest"\n' +
+    '    } ]\n' +
+    '  }\n' +
+    '}'
+}
+[2022-05-26T19:01:55.751] [INFO] devops-prov.openclient - Status code:  200
+[2022-05-26T19:01:55.751] [INFO] devops-prov.openclient - Body:  {
+  "propertyId" : "prp_803491",
+  "propertyName" : "dj26May2022-config-rapid-dj.xml",
+  "accountId" : "act_B-C-1ED34DK",
+  "contractId" : "ctr_C-1ED34DY",
+  "groupId" : "grp_178772",
+  "assetId" : "aid_11025314",
+  "versions" : {
+    "items" : [ {
+      "propertyVersion" : 1,
+      "updatedByUser" : "djha",
+      "updatedDate" : "2022-05-26T09:01:50Z",
+      "productionStatus" : "INACTIVE",
+      "stagingStatus" : "INACTIVE",
+      "etag" : "8faca7cbff148989393cf0cbd1814cb1439a4bc2",
+      "productId" : "prd_SPM",
+      "ruleFormat" : "latest"
+    } ]
+  }
+}
+[2022-05-26T19:01:55.751] [INFO] pm-cli.envionment - envInfo:  {
+  name: 'dj26May2022-config-rapid-dj.xml',
+  propertyName: 'dj26May2022-config-rapid-dj.xml',
+  groupId: '178772',
+  isSecure: false,
+  propertyId: 803491,
+  latestVersionInfo: {
+    propertyVersion: 1,
+    updatedByUser: 'djha',
+    updatedDate: '2022-05-26T09:01:50Z',
+    productionStatus: 'INACTIVE',
+    stagingStatus: 'INACTIVE',
+    productId: 'prd_SPM',
+    ruleFormat: 'latest'
+  }
+}
+[2022-05-26T19:01:55.756] [INFO] devops-prov.el - parsing: boolean
+[2022-05-26T19:01:55.757] [INFO] devops-prov.el - parsing: enableCustomKey
+[2022-05-26T19:01:55.757] [INFO] devops-prov.el - parsing: /akamai/sure-route-test-object.html
+[2022-05-26T19:01:55.757] [INFO] devops-prov.el - parsing: url
+[2022-05-26T19:01:55.758] [INFO] devops-prov.el - parsing: sureRouteTestObject
+[2022-05-26T19:01:55.758] [INFO] devops-prov.el - parsing: /akamai/sure-route-test-object.html
+[2022-05-26T19:01:55.758] [INFO] devops-prov.el - parsing: origin-${environment.propertyName}
+[2022-05-26T19:01:55.758] [INFO] devops-prov.el - Replacing 'origin-${environment.propertyName}' with: 'origin-dj26May2022-config-rapid-dj.xml'
+[2022-05-26T19:01:55.758] [INFO] devops-prov.el - parsing: hostname
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - parsing: originHostname
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - parsing: origin-${environment.propertyName}
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - Replacing 'origin-${environment.propertyName}' with: 'origin-dj26May2022-config-rapid-dj.xml'
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - parsing: ${environment.propertyName}.download.akamai.com
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - Replacing '${environment.propertyName}.download.akamai.com' with: 'dj26May2022-config-rapid-dj.xml.download.akamai.com'
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - parsing: netStorage
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - parsing: netStorageInfo
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - parsing: ${environment.propertyName}.download.akamai.com
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - Replacing '${environment.propertyName}.download.akamai.com' with: 'dj26May2022-config-rapid-dj.xml.download.akamai.com'
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - parsing: INPUT_CPCODE_ID
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - parsing: cpCode
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - parsing: cpCode
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - parsing: compression.json
+[2022-05-26T19:01:55.759] [INFO] devops-prov.el - parsing: static.json
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: dynamic.json
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: performance.json
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: lfo.json
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: BYPASS
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: url
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: tier1MobileCompressionMethod
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: BYPASS
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: BYPASS
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: url
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: tier2MobileCompressionMethod
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: BYPASS
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: INPUT_FIREWALL_CONFIGURATION_VALUE
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: wafRule
+[2022-05-26T19:01:55.760] [INFO] devops-prov.el - parsing: firewallConfiguration
+[2022-05-26T19:01:55.762] [INFO] devops-prov.template - looking at rule: Offload origin
+[2022-05-26T19:01:55.763] [INFO] devops-prov.template - looking at rule: Minimize payload
+[2022-05-26T19:01:55.763] [INFO] devops-prov.template - looking at rule: Test
