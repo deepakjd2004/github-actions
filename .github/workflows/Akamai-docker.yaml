@@ -17,9 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: akamai/shell
-    volumes:
-      - ${{ github.workspace }}
     steps:
+      - uses: actions/checkout@v2
          - name: Save Akamai PM
            run: |
              echo -e "[papi]\nclient_secret = ${{ secrets.AKAMAI_DEFAULT_CLIENT_SECRET }}\nhost = ${{ secrets.AKAMAI_DEFAULT_HOST }}\naccess_token = ${{ secrets.AKAMAI_DEFAULT_ACCESS_TOKEN }}\nclient_token = ${{ secrets.AKAMAI_DEFAULT_CLIENT_TOKEN }}" > "$HOME/.edgerc"
