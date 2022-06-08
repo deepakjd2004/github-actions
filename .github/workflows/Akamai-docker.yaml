@@ -22,10 +22,22 @@ jobs:
       - name: Terraform - Import an existing property
         run: |
              echo -e "[default]\nclient_secret = ${{ secrets.AKAMAI_DEFAULT_CLIENT_SECRET }}\nhost = ${{ secrets.AKAMAI_DEFAULT_HOST }}\naccess_token = ${{ secrets.AKAMAI_DEFAULT_ACCESS_TOKEN }}\nclient_token = ${{ secrets.AKAMAI_DEFAULT_CLIENT_TOKEN }}\naccount_key = ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}}" > "$HOME/.edgerc"
-             akamai terraform --accountkey ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}} create-property demo-property-nine-DJ
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
+             akamai terraform --accountkey ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}} create-property demo-property-nine-DJ 
+      - name: Commit files
+        id: commit
+        run: |
+          git config --local user.email "deepakjd2004@gmail.com"
+          git config --local user.name "deepakjd2004"
+          git add --all
+          if [-z "$(git status --porcelain)"]; then
+           echo "::set-output name=push::false"
+          else
+           git commit -m "Add changes" -a
+           echo "::set-output name=push::true"
+          fi
+        shell: bash
+      - name: Push changes
+        if: steps.commit.outputs.push == 'true'
+        uses: deepakjd2004/github-actions@master
         with:
-          name: dist-without-markdown
-          path: |
-                terraform
+         github_token: ${{ secrets.GITHUB_TOKEN }}
