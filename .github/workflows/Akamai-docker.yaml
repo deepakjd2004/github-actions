@@ -18,16 +18,10 @@ jobs:
     container:
       image: akamai/shell
     steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        
       - name: Terraform - Import an existing property
         run: |
              echo -e "[default]\nclient_secret = ${{ secrets.AKAMAI_DEFAULT_CLIENT_SECRET }}\nhost = ${{ secrets.AKAMAI_DEFAULT_HOST }}\naccess_token = ${{ secrets.AKAMAI_DEFAULT_ACCESS_TOKEN }}\nclient_token = ${{ secrets.AKAMAI_DEFAULT_CLIENT_TOKEN }}\naccount_key = ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}}" > "$HOME/.edgerc"
              akamai terraform --accountkey ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}} create-property demo-property-nine-DJ 
-             
-      - name: "🚀 deploy static"
-        uses: actions/checkout@v3
-        with:
-          publish_branch: main
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./terraform
-          commit_message: ${{ github.event.head_commit.message }}
-          enable_jekyll: false
