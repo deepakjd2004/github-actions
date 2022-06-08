@@ -31,7 +31,7 @@ jobs:
           git commit -m "generated"
           git push
       - name: Push changes
-        uses: actions/checkout@v3
         if: steps.commit.outputs.push == 'true'
+        uses: ad-m/github-push-action@master
         with:
          github_token: ${{ secrets.GITHUB_TOKEN }}
