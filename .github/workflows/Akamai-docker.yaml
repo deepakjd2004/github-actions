@@ -21,10 +21,11 @@ jobs:
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
-            options: -v ${{ github.workspace }}:/workdir
+            options: -v ${{ github.workspace }}:/root
             using: 'docker'
             image: akamai/shell
+            shell: bash
             run: |
-                echo -e "[default]\nclient_secret = ${{ secrets.AKAMAI_DEFAULT_CLIENT_SECRET }}\nhost = ${{ secrets.AKAMAI_DEFAULT_HOST }}\naccess_token = ${{ secrets.AKAMAI_DEFAULT_ACCESS_TOKEN }}\nclient_token = ${{ secrets.AKAMAI_DEFAULT_CLIENT_TOKEN }}\naccount_key = ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}}" > ".edgerc"
+                echo -e "[default]\nclient_secret = ${{ secrets.AKAMAI_DEFAULT_CLIENT_SECRET }}\nhost = ${{ secrets.AKAMAI_DEFAULT_HOST }}\naccess_token = ${{ secrets.AKAMAI_DEFAULT_ACCESS_TOKEN }}\nclient_token = ${{ secrets.AKAMAI_DEFAULT_CLIENT_TOKEN }}\naccount_key = ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}}" > "/root/.edgerc"
                 cat /root/.edgerc
                 akamai terraform --accountkey ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}} create-property demo-property-nine-DJ 
