@@ -18,7 +18,6 @@ jobs:
     container:
       image: akamai/shell
     steps:
-      - uses: actions/checkout@v2
       - name: Terraform - Import an existing property
         run: |
              echo -e "[default]\nclient_secret = ${{ secrets.AKAMAI_DEFAULT_CLIENT_SECRET }}\nhost = ${{ secrets.AKAMAI_DEFAULT_HOST }}\naccess_token = ${{ secrets.AKAMAI_DEFAULT_ACCESS_TOKEN }}\nclient_token = ${{ secrets.AKAMAI_DEFAULT_CLIENT_TOKEN }}\naccount_key = ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}}" > "$HOME/.edgerc"
