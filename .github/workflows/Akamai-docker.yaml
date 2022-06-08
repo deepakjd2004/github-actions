@@ -17,6 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: akamai/shell
+    volumes:
+      - ${{ github.workspace }}
     steps:
          - name: Save Akamai PM
            run: |
