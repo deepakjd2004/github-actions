@@ -38,6 +38,6 @@ jobs:
         shell: bash
       - name: Push changes
         if: steps.commit.outputs.push == 'true'
-        uses: deepakjd2004/github-actions@master
+        uses: deepakjd2004/github-actions@main
         with:
          github_token: ${{ secrets.GITHUB_TOKEN }}
