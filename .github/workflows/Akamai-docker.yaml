@@ -19,7 +19,7 @@ jobs:
       image: akamai/shell
     steps:
       - uses: actions/checkout@v2
-         - name: Save Akamai PM
-           run: |
+      - name: Save Akamai PM
+        run: |
              echo -e "[papi]\nclient_secret = ${{ secrets.AKAMAI_DEFAULT_CLIENT_SECRET }}\nhost = ${{ secrets.AKAMAI_DEFAULT_HOST }}\naccess_token = ${{ secrets.AKAMAI_DEFAULT_ACCESS_TOKEN }}\nclient_token = ${{ secrets.AKAMAI_DEFAULT_CLIENT_TOKEN }}" > "$HOME/.edgerc"
              akamai pm save -p dj26May2022-config-rapid-dj.xml -a B-C-1ED34DK
