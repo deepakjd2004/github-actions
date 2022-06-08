@@ -23,7 +23,8 @@ jobs:
              echo -e "[default]\nclient_secret = ${{ secrets.AKAMAI_DEFAULT_CLIENT_SECRET }}\nhost = ${{ secrets.AKAMAI_DEFAULT_HOST }}\naccess_token = ${{ secrets.AKAMAI_DEFAULT_ACCESS_TOKEN }}\nclient_token = ${{ secrets.AKAMAI_DEFAULT_CLIENT_TOKEN }}\naccount_key = ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}}" > "$HOME/.edgerc"
              akamai terraform --accountkey ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}} create-property demo-property-nine-DJ 
       - name: Checkout
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
+      
       - name: Commit
         run: |
           git config --local user.email "deepakjd2004@gmail.com"
