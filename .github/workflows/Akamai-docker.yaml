@@ -19,8 +19,9 @@ jobs:
       image: deepakjd2004/github-action
     steps:
       - name: checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         with:
+          ref: ${{ github.head_ref }}
           fetch-depth: 0
 
       - name: Terraform - Import an existing property
@@ -32,12 +33,10 @@ jobs:
              git init
              git config --local user.email "deepakjd2004@gmail.com"
              git config --local user.name "deepakjd2004"
-             git pull https://github.com/deepakjd2004/github-action-terraform
              git add --all
              git commit -m "Add changes" -a
+
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
-          repository: https://github.com/deepakjd2004/github-action-terraform
