@@ -34,7 +34,7 @@ jobs:
              git config --local user.email "deepakjd2004@gmail.com"
              git config --local user.name "deepakjd2004"
              echo "next is pull command"
-             git pull https://github.com/deepakjd2004/github-action
+             git pull https://github.com/deepakjd2004/github-actions
              echo "pull command success"
              git add --all
              git commit -m "Add changes" -a
