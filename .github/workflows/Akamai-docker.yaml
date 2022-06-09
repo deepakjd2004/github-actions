@@ -35,10 +35,9 @@ jobs:
         with:
           source-directory: workdir/
           destination-github-username: 'deepakjd2004'
-          destination-repository-name: 'deepakjd2004/github-action-terraform'
+          destination-repository-name: 'github-action-terraform'
           user-email: deepakjd2004@gmail.com
           commit-message: See ORIGIN_COMMIT from $GITHUB_REF
           target-branch: main
       - name: Test get variable exported by push-to-another-repository
         run: echo $DESTINATION_CLONED_DIRECTORY
-  
