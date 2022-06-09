@@ -33,7 +33,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.AKAMAI_GITHUB_TOKEN }}
         with:
-          source-directory: workdir/
+          source-directory: output/
           destination-github-username: 'deepakjd2004'
           destination-repository-name: 'github-action-terraform'
           user-email: deepakjd2004@gmail.com
