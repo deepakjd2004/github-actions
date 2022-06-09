@@ -27,18 +27,17 @@ jobs:
         run: |
              echo -e "[default]\nclient_secret = ${{ secrets.AKAMAI_DEFAULT_CLIENT_SECRET }}\nhost = ${{ secrets.AKAMAI_DEFAULT_HOST }}\naccess_token = ${{ secrets.AKAMAI_DEFAULT_ACCESS_TOKEN }}\nclient_token = ${{ secrets.AKAMAI_DEFAULT_CLIENT_TOKEN }}\naccount_key = ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}}" > "$HOME/.edgerc"
              akamai terraform --accountkey ${{secrets.AKAMAI_AS_ACCOUNTSWITCHKEY}} create-property Devops-Training
-      - name: Pushes to another repository
-        id: push_directory
-        uses: cpina/github-action-push-to-another-repository@devel
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.AKAMAI_GITHUB_TOKEN }}
+             which git
+             git --version
+             git init
+             git config --local user.email "deepakjd2004@gmail.com"
+             git config --local user.name "deepakjd2004"
+             git pull https://github.com/deepakjd2004/github-action-terraform
+             git add --all
+             git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
         with:
-          source-directory: workdir/
-          destination-github-username: 'deepakjd2004'
-          destination-repository-name: 'deepakjd2004/github-action-terraform'
-          user-email: deepakjd2004@gmail.com
-          commit-message: See ORIGIN_COMMIT from $GITHUB_REF
-          target-branch: main
-      - name: Test get variable exported by push-to-another-repository
-        run: echo $DESTINATION_CLONED_DIRECTORY
-  
+          github_token: ${{ secrets.AKAMAI_GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+          repository: deepakjd2004/github-action-terraform
