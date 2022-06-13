@@ -20,4 +20,8 @@ RUN sed -i "s/3.13/3.5/g" /etc/apk/repositories
 RUN apk update
 RUN apk upgrade --available && sync
 
-
+# for latest you alpine use below code
+# FROM akamai/shell:latest
+# RUN sed -i "s/v3.13/latest-stable/g" /etc/apk/repositories
+# RUN apk update --allow-untrusted
+# apk upgrade --allow-untrusted --available && sync
