@@ -44,6 +44,9 @@ jobs:
       - name: Test get variable exported by push-to-another-repository
         run: echo $DESTINATION_CLONED_DIRECTORY
       - name: Run Import.sh
+        uses: actions/checkout@v3
+        with:
+          repository: 'deepakjd2004/github-action-terraform'
         run: |
               chmod +x import.sh
               ./import.sh
